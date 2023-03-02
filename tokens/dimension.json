@@ -20,67 +20,67 @@
         "type": "sizing"
       },
       "25": {
-        "value": "{size.static.100}*0.25",
+        "value": "{size.static._base}*0.25",
         "type": "sizing"
       },
       "50": {
-        "value": "{size.static.100}*0.5",
+        "value": "{size.static._base}*0.5",
         "type": "sizing"
       },
       "75": {
-        "value": "{size.static.100}*0.75",
+        "value": "{size.static._base}*0.75",
         "type": "sizing"
       },
       "100": {
-        "value": "{size.static.100}",
+        "value": "{size.static._base}",
         "type": "sizing"
       },
       "125": {
-        "value": "{size.static.100}*1.25",
+        "value": "{size.static._base}*1.25",
         "type": "sizing"
       },
       "150": {
-        "value": "{size.static.100}*1.5",
+        "value": "{size.static._base}*1.5",
         "type": "sizing"
       },
       "175": {
-        "value": "{size.static.100}*1.75",
+        "value": "{size.static._base}*1.75",
         "type": "sizing"
       },
       "200": {
-        "value": "{size.static.100}*2",
+        "value": "{size.static._base}*2",
         "type": "sizing"
       },
       "250": {
-        "value": "{size.static.100}*2.5",
+        "value": "{size.static._base}*2.5",
         "type": "sizing"
       },
       "300": {
-        "value": "{size.static.100}*3",
+        "value": "{size.static._base}*3",
         "type": "sizing"
       },
       "400": {
-        "value": "{size.static.100}*4",
+        "value": "{size.static._base}*4",
         "type": "sizing"
       },
       "500": {
-        "value": "{size.static.100}*5",
+        "value": "{size.static._base}*5",
         "type": "sizing"
       },
       "600": {
-        "value": "{size.static.100}*6",
+        "value": "{size.static._base}*6",
         "type": "sizing"
       },
       "700": {
-        "value": "{size.static.100}*7",
+        "value": "{size.static._base}*7",
         "type": "sizing"
       },
       "800": {
-        "value": "{size.static.100}*8",
+        "value": "{size.static._base}*8",
         "type": "sizing"
       },
       "900": {
-        "value": "{size.static.100}*9",
+        "value": "{size.static._base}*9",
         "type": "sizing"
       }
     },
