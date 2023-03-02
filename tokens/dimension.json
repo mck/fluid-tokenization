@@ -6,7 +6,7 @@
         "type": "sizing"
       },
       "r": {
-        "value": "2",
+        "value": "3",
         "type": "sizing"
       },
       "n": {
@@ -15,10 +15,6 @@
       }
     },
     "static": {
-      "_base": {
-        "value": "{font-size._base}",
-        "type": "sizing"
-      },
       "25": {
         "value": "{size.static._base}*0.25",
         "type": "sizing"
@@ -82,11 +78,63 @@
       "900": {
         "value": "{size.static._base}*9",
         "type": "sizing"
+      },
+      "_base": {
+        "value": "{font-size._base}",
+        "type": "sizing"
       }
     },
     "scale": {
-      "1x": {
-        "value": "5*roundTo(({eds.core.const.f0}*{eds.core.const.r}^(1/{eds.core.const.n})/5),1)",
+      "f-4": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(-4/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f-3": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(-3/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f-2": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(-2/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f-1": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(-1/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f0": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(0/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f3": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(3/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f4": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(4/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f5": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(5/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f6": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(6/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f7": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(7/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f8": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(8/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f9": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(9/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f10": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(10/{size.const.n})/5),1)",
         "type": "sizing"
       }
     },
