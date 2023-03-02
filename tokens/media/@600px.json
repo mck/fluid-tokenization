@@ -1,1 +1,8 @@
-{}
+{
+  "viewport": {
+    "width": {
+      "value": "600",
+      "type": "sizing"
+    }
+  }
+}

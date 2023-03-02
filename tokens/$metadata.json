@@ -1,11 +1,11 @@
 {
   "tokenSetOrder": [
-    "base/color",
-    "base/font",
+    "color",
+    "dimension",
+    "font",
     "media/@600px",
     "media/@960px",
     "media/@1264px",
-    "media/@1904px",
-    "semantic/font"
+    "media/@1904px"
   ]
 }

@@ -1,10 +1,8 @@
 {
-  "core": {
-    "font-size": {
-      "1x": {
-        "value": "32",
-        "type": "fontSizes"
-      }
+  "viewport": {
+    "width": {
+      "value": "1904",
+      "type": "sizing"
     }
   }
 }

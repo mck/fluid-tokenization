@@ -1,0 +1,70 @@
+{
+  "size": {
+    "const": {
+      "f0": {
+        "value": "{font-size.base}",
+        "type": "sizing"
+      },
+      "r": {
+        "value": "2",
+        "type": "sizing"
+      },
+      "n": {
+        "value": "5",
+        "type": "sizing"
+      }
+    },
+    "static": {
+      "_base": {
+        "value": "{font-size.base}",
+        "type": "sizing"
+      },
+      "100": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(1/{size.const.n})/5),1)",
+        "type": "sizing"
+      }
+    },
+    "fluid": {
+      "50": {
+        "min": {
+          "value": "{size.50}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.50}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.fluid-50.max}-{size.fluid.fluid-50.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.fluid-50.max} - {viewport.max} * {size.fluid.fluid-50.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.fluid-50.v} + {size.fluid.fluid-50.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.fluid-50.min},  {size.fluid.fluid-50.fluid}) ,{size.fluid.fluid-50.max})",
+          "type": "sizing"
+        }
+      }
+    }
+  },
+  "viewport": {
+    "min": {
+      "value": "360",
+      "type": "sizing"
+    },
+    "max": {
+      "value": "1904",
+      "type": "sizing"
+    },
+    "width": {
+      "value": "{viewport.min}",
+      "type": "sizing"
+    }
+  }
+}
