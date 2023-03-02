@@ -234,17 +234,12 @@
       }
     },
     "font-family": {
-      "base": {
-        "value": "Inter",
-        "type": "fontFamilies",
-        "description": "Base"
-      },
       "primary": {
-        "value": "{core.font-family.base}",
+        "value": "Merriweather",
         "type": "fontFamilies"
       },
       "secondary": {
-        "value": "{core.font-family.base}",
+        "value": "Noto Sans",
         "type": "fontFamilies"
       }
     }
