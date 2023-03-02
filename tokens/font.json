@@ -1,91 +1,91 @@
 {
   "font-size": {
     "100": {
-      "value": "{base.font-size._base}",
+      "value": "{font-size._base}",
       "type": "fontSizes"
     },
     "110": {
-      "value": "{base.font-size._base}*1.125",
+      "value": "{font-size._base}*1.125",
       "type": "fontSizes"
     },
     "125": {
-      "value": "{base.font-size._base}*1.25",
+      "value": "{font-size._base}*1.25",
       "type": "fontSizes"
     },
     "150": {
-      "value": "{base.font-size._base}*1.5",
+      "value": "{font-size._base}*1.5",
       "type": "fontSizes"
     },
     "200": {
-      "value": "{base.font-size._base}*2",
+      "value": "{font-size._base}*2",
       "type": "fontSizes"
     },
     "250": {
-      "value": "{base.font-size._base}*2.5",
+      "value": "{font-size._base}*2.5",
       "type": "fontSizes"
     },
     "300": {
-      "value": "{base.font-size._base}*3",
+      "value": "{font-size._base}*3",
       "type": "fontSizes"
     },
     "350": {
-      "value": "{base.font-size._base}*3.5",
+      "value": "{font-size._base}*3.5",
       "type": "fontSizes"
     },
     "400": {
-      "value": "{base.font-size._base}*4",
+      "value": "{font-size._base}*4",
       "type": "fontSizes"
     },
     "500": {
-      "value": "{base.font-size._base}*5",
+      "value": "{font-size._base}*5",
       "type": "fontSizes"
     },
     "1x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^0,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^0,0)",
       "type": "fontSizes"
     },
     "2x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^1,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^1,0)",
       "type": "fontSizes"
     },
     "3x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^2,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^2,0)",
       "type": "fontSizes"
     },
     "4x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^3,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^3,0)",
       "type": "fontSizes"
     },
     "5x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^4,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^4,0)",
       "type": "fontSizes"
     },
     "6x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^5,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^5,0)",
       "type": "fontSizes"
     },
     "7x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^6,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^6,0)",
       "type": "fontSizes"
     },
     "8x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^7,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^7,0)",
       "type": "fontSizes"
     },
     "9x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^8,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^8,0)",
       "type": "fontSizes"
     },
     "10x": {
-      "value": "roundTo({base.font-size._base}*{base.font-scale.base}^9,0)",
+      "value": "roundTo({font-size._base}*{font-scale.base}^9,0)",
       "type": "fontSizes"
     },
     "075": {
-      "value": "{base.font-size._base}*0.75",
+      "value": "{font-size._base}*0.75",
       "type": "fontSizes"
     },
     "090": {
-      "value": "{base.font-size._base}*0.875",
+      "value": "{font-size._base}*0.875",
       "type": "fontSizes"
     },
     "_base": {
@@ -127,7 +127,7 @@
       "type": "other"
     },
     "base": {
-      "value": "{base.font-scale.major-third}",
+      "value": "{font-scale.major-third}",
       "type": "other"
     }
   },
@@ -187,7 +187,7 @@
       "type": "lineHeights"
     },
     "base": {
-      "value": "{base.line-height.150}",
+      "value": "{line-height.150}",
       "type": "lineHeights"
     }
   },
@@ -223,7 +223,7 @@
   },
   "paragraph-spacing": {
     "base": {
-      "value": "{base.font-size.1x}",
+      "value": "{font-size.1x}",
       "type": "paragraphSpacing"
     },
     "none": {
