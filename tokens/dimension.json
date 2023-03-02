@@ -2,7 +2,7 @@
   "size": {
     "const": {
       "f0": {
-        "value": "{font-size.base}",
+        "value": "{font-size._base}",
         "type": "sizing"
       },
       "r": {
@@ -15,12 +15,12 @@
       }
     },
     "static": {
-      "_base": {
-        "value": "{font-size.base}",
-        "type": "sizing"
-      },
       "100": {
         "value": "5*roundTo(({size.const.f0}*{size.const.r}^(1/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "_base": {
+        "value": "{font-size._base}",
         "type": "sizing"
       }
     },

@@ -1,10 +1,5 @@
 {
   "font-size": {
-    "_base": {
-      "value": "16",
-      "type": "other",
-      "description": "Default application font size. This is used for all size calculations."
-    },
     "100": {
       "value": "{base.font-size._base}",
       "type": "fontSizes"
@@ -91,6 +86,10 @@
     },
     "090": {
       "value": "{base.font-size._base}*0.875",
+      "type": "fontSizes"
+    },
+    "_base": {
+      "value": "16",
       "type": "fontSizes"
     }
   },
