@@ -1,0 +1,10 @@
+{
+  "core": {
+    "font-size": {
+      "1x": {
+        "value": "24",
+        "type": "fontSizes"
+      }
+    }
+  }
+}
