@@ -175,6 +175,182 @@
       }
     }
   },
+  "spacing": {
+    "const": {
+      "f0": {
+        "value": "{font-spacing._base}",
+        "type": "spacing"
+      },
+      "r": {
+        "value": "4",
+        "type": "spacing"
+      },
+      "n": {
+        "value": "5",
+        "type": "spacing"
+      }
+    },
+    "static": {
+      "25": {
+        "value": "{spacing.static._base}*0.25",
+        "type": "spacing"
+      },
+      "50": {
+        "value": "{spacing.static._base}*0.5",
+        "type": "spacing"
+      },
+      "75": {
+        "value": "{spacing.static._base}*0.75",
+        "type": "spacing"
+      },
+      "100": {
+        "value": "{spacing.static._base}",
+        "type": "spacing"
+      },
+      "125": {
+        "value": "{spacing.static._base}*1.25",
+        "type": "spacing"
+      },
+      "150": {
+        "value": "{spacing.static._base}*1.5",
+        "type": "spacing"
+      },
+      "175": {
+        "value": "{spacing.static._base}*1.75",
+        "type": "spacing"
+      },
+      "200": {
+        "value": "{spacing.static._base}*2",
+        "type": "spacing"
+      },
+      "250": {
+        "value": "{spacing.static._base}*2.5",
+        "type": "spacing"
+      },
+      "300": {
+        "value": "{spacing.static._base}*3",
+        "type": "spacing"
+      },
+      "400": {
+        "value": "{spacing.static._base}*4",
+        "type": "spacing"
+      },
+      "500": {
+        "value": "{spacing.static._base}*5",
+        "type": "spacing"
+      },
+      "600": {
+        "value": "{spacing.static._base}*6",
+        "type": "spacing"
+      },
+      "700": {
+        "value": "{spacing.static._base}*7",
+        "type": "spacing"
+      },
+      "800": {
+        "value": "{spacing.static._base}*8",
+        "type": "spacing"
+      },
+      "900": {
+        "value": "{spacing.static._base}*9",
+        "type": "spacing"
+      },
+      "_base": {
+        "value": "{font-spacing._base}",
+        "type": "spacing"
+      }
+    },
+    "scale": {
+      "f-4": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(-4/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f-3": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(-3/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f-2": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(-2/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f-1": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(-1/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f0": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(0/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f1": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(1/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f2": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(2/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f3": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(3/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f4": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(4/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f5": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(5/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f6": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(6/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f7": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(7/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f8": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(8/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f9": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(9/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      },
+      "f10": {
+        "value": "5*roundTo(({spacing.const.f0}*{spacing.const.r}^(10/{spacing.const.n})/5),1)",
+        "type": "spacing"
+      }
+    },
+    "fluid": {
+      "50": {
+        "min": {
+          "value": "{spacing.50}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{spacing.50}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({spacing.fluid.fluid-50.max}-{spacing.fluid.fluid-50.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {spacing.fluid.fluid-50.max} - {viewport.max} * {spacing.fluid.fluid-50.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {spacing.fluid.fluid-50.v} + {spacing.fluid.fluid-50.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {spacing.fluid.fluid-50.min},  {spacing.fluid.fluid-50.fluid}) ,{spacing.fluid.fluid-50.max})",
+          "type": "spacing"
+        }
+      }
+    }
+  },
   "viewport": {
     "min": {
       "value": "360",
