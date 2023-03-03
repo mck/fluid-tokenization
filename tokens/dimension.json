@@ -6,7 +6,7 @@
         "type": "sizing"
       },
       "r": {
-        "value": "3",
+        "value": "4",
         "type": "sizing"
       },
       "n": {
@@ -103,6 +103,14 @@
       },
       "f0": {
         "value": "5*roundTo(({size.const.f0}*{size.const.r}^(0/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f1": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(1/{size.const.n})/5),1)",
+        "type": "sizing"
+      },
+      "f2": {
+        "value": "5*roundTo(({size.const.f0}*{size.const.r}^(2/{size.const.n})/5),1)",
         "type": "sizing"
       },
       "f3": {
