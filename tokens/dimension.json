@@ -178,7 +178,7 @@
   "spacing": {
     "const": {
       "f0": {
-        "value": "{font-spacing._base}",
+        "value": "{font-size._base}",
         "type": "spacing"
       },
       "r": {
@@ -256,7 +256,7 @@
         "type": "spacing"
       },
       "_base": {
-        "value": "{font-spacing._base}",
+        "value": "{font-size._base}",
         "type": "spacing"
       }
     },
