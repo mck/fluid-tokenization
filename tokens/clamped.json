@@ -1,7 +1,59 @@
 {
-  "clamped": {
-    "value": "clamped(16,5345,32)",
-    "type": "sizing",
-    "description": "Test new function for clamped in SD https://github.com/tokens-studio/figma-plugin/pull/1657"
+  "viewport": {
+    "min": {
+      "value": "360",
+      "type": "sizing"
+    },
+    "max": {
+      "value": "1920",
+      "type": "sizing"
+    },
+    "width": {
+      "value": "1280",
+      "type": "sizing"
+    }
+  },
+  "test": {
+    "min": {
+      "value": "16",
+      "type": "sizing"
+    },
+    "max": {
+      "value": "32",
+      "type": "sizing"
+    },
+    "r1": {
+      "value": "({viewport.min} * {test.max}) - ({viewport.max} * {test.min})",
+      "type": "sizing"
+    },
+    "r2": {
+      "value": "{viewport.min}-{viewport.max}",
+      "type": "sizing"
+    },
+    "r": {
+      "value": "{test.r1}/{test.r2}",
+      "type": "sizing"
+    },
+    "v": {
+      "value": "100 * ({test.max} - {test.min}) / ({viewport.max} - {viewport.min})",
+      "type": "sizing"
+    },
+    "vw": {
+      "value": "{test.v} * {vw}",
+      "type": "sizing"
+    },
+    "fluid": {
+      "value": "{test.vw} + {test.r}",
+      "type": "sizing"
+    },
+    "clamp": {
+      "value": "clamped({test.min}, {test.v} * {vw} + {test.r},{test.max})",
+      "type": "sizing",
+      "description": "Test new function for clamped in SD https://github.com/tokens-studio/figma-plugin/pull/1657"
+    }
+  },
+  "vw": {
+    "value": "{viewport.width}/100",
+    "type": "sizing"
   }
 }

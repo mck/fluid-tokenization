@@ -1,0 +1,19 @@
+{
+  "name": "fluid-tokenization",
+  "version": "1.0.0",
+  "description": "From Static to Dynamic: How Fluid Interfaces and Typography Enhance Your Design System",
+  "main": "index.js",
+  "repository": "https://github.com/mck/fluid-tokenization.git",
+  "author": "Marco-Christian Krenn <hey@mck.systems>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mck/fluid-tokenization/issues"
+  },
+  "homepage": "https://github.com/mck/fluid-tokenization#readme",
+  "dependencies": {
+    "@tokens-studio/sd-transforms": "^0.4.5"
+  },
+  "scripts": {
+    "build": "node build-tokens"
+  }
+}
