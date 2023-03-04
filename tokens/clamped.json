@@ -1,0 +1,7 @@
+{
+  "clamped": {
+    "value": "clamped(16,5345,32)",
+    "type": "sizing",
+    "description": "Test new function for clamped in SD https://github.com/tokens-studio/figma-plugin/pull/1657"
+  }
+}
