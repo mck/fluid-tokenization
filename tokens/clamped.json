@@ -22,38 +22,60 @@
       "value": "32",
       "type": "sizing"
     },
+    "a1": {
+      "value": "{viewport.min}*{test.max}",
+      "type": "dimension"
+    },
+    "a2": {
+      "value": "{viewport.max}*{test.min}",
+      "type": "dimension"
+    },
     "r1": {
-      "value": "({viewport.min} * {test.max}) - ({viewport.max} * {test.min})",
-      "type": "sizing"
+      "value": "{test.a1} - {test.a2}",
+      "type": "other"
     },
     "r2": {
       "value": "{viewport.min}-{viewport.max}",
-      "type": "sizing"
+      "type": "other"
     },
     "r": {
-      "value": "{test.r1}/{test.r2}",
-      "type": "sizing"
+      "value": "(({viewport.min}*{test.max}) - ({viewport.max}*{test.min})/({viewport.min}-{viewport.max})",
+      "type": "other"
     },
     "v": {
       "value": "100 * ({test.max} - {test.min}) / ({viewport.max} - {viewport.min})",
-      "type": "sizing"
+      "type": "other"
     },
     "vw": {
       "value": "{test.v} * {vw}",
-      "type": "sizing"
+      "type": "dimension"
+    },
+    "bar": {
+      "value": " ((({viewport.min}*{test.max})-({viewport.max}*{test.min})) / ({viewport.min}-{viewport.max})) ",
+      "type": "dimension"
     },
     "fluid": {
-      "value": "{test.vw} + {test.r}",
-      "type": "sizing"
+      "value": "(((100 * ({test.max}-{test.min}) / ({viewport.max}-{viewport.min})) * {vw}))",
+      "type": "dimension"
+    },
+    "not-breaking-expr": {
+      "value": "{test.bar} + {test.fluid}",
+      "type": "dimension",
+      "description": "resolves great in token studio and without px applied in SD, not working with px applied in SD"
+    },
+    "breaking-expr": {
+      "value": "((({viewport.min}*{test.max})-({viewport.max}*{test.min})) / ({viewport.min}-{viewport.max})) + (((100 * ({test.max}-{test.min}) / ({viewport.max}-{viewport.min})) * {vw}))",
+      "type": "dimension",
+      "description": "breaks expr-eval if i try to do it inline to prevent the px problem"
     },
     "clamp": {
-      "value": "clamped({test.min}, {test.v} * {vw} + {test.r},{test.max})",
-      "type": "sizing",
+      "value": "clamped({test.min}, ((({viewport.min}*{test.max})-({viewport.max}*{test.min})) / ({viewport.min}-{viewport.max})) + (((100 * ({test.max}-{test.min}) / ({viewport.max}-{viewport.min})) * {vw})) ,{test.max})",
+      "type": "dimension",
       "description": "Test new function for clamped in SD https://github.com/tokens-studio/figma-plugin/pull/1657"
     }
   },
   "vw": {
-    "value": "{viewport.width}/100",
-    "type": "sizing"
+    "value": "({viewport.width}*0.01)",
+    "type": "unit"
   }
 }

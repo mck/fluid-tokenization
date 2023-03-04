@@ -6,21 +6,11 @@ registerTransforms(StyleDictionary);
 const sd = StyleDictionary.extend({
     source: ['./tokens/clamped.json'],
     platforms: {
-        js: {
-            transformGroup: 'tokens-studio',
-            buildPath: 'build/js/',
-            files: [
-                {
-                    destination: 'variables.js',
-                    format: 'javascript/es6',
-                },
-            ],
-        },
         css: {
             transforms: [
                 'ts/descriptionToComment',
                 'ts/resolveMath',
-                // 'ts/size/px',
+                'ts/size/px',
                 'ts/size/letterspacing',
                 'ts/size/lineheight',
                 'ts/type/fontWeight',
