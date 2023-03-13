@@ -19,8 +19,7 @@
       "sections/team": "enabled",
       "sections/pricing": "enabled",
       "sections/footer": "enabled",
-      "theme/light": "enabled",
-      "theme/dark": "disabled"
+      "theme/light": "enabled"
     },
     "$figmaStyleReferences": {}
   },

@@ -16,7 +16,15 @@
     "sections/team",
     "sections/pricing",
     "sections/footer",
+    "media/@600px",
+    "media/@960px",
+    "media/@1264px",
+    "media/@1904px",
     "theme/light",
-    "theme/dark"
+    "theme/dark",
+    "clamped",
+    "color",
+    "dimension",
+    "font"
   ]
 }
