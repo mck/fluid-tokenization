@@ -1116,6 +1116,10 @@
           "value": "{space.2600}",
           "type": "spacing"
         }
+      },
+      "container": {
+        "value": "{space.200}",
+        "type": "spacing"
       }
     },
     "size": {

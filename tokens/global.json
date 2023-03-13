@@ -2179,6 +2179,10 @@
       "value": "{space.base} * 26",
       "type": "spacing"
     },
+    "3200": {
+      "value": "{space.base} * 32",
+      "type": "spacing"
+    },
     "6000": {
       "value": "{space.base} * 60",
       "type": "spacing"

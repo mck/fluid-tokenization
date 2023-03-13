@@ -4,5 +4,13 @@
       "value": "1264",
       "type": "sizing"
     }
+  },
+  "semantic": {
+    "space-around": {
+      "container": {
+        "value": "{space.1200}",
+        "type": "spacing"
+      }
+    }
   }
 }
