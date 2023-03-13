@@ -16,7 +16,7 @@
         "type": "spacing"
       },
       "padding-x": {
-        "value": "{semantic.space-around.section.lg}",
+        "value": "{semantic.space-around.section.xs}",
         "type": "spacing"
       },
       "image": {

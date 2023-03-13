@@ -2107,6 +2107,10 @@
       "value": "{space.base} * .25",
       "type": "spacing"
     },
+    "50": {
+      "value": "{space.base} * .5",
+      "type": "spacing"
+    },
     "100": {
       "value": "{space.base} * 1",
       "type": "spacing"
@@ -2175,6 +2179,10 @@
       "value": "{space.base} * 26",
       "type": "spacing"
     },
+    "6000": {
+      "value": "{space.base} * 60",
+      "type": "spacing"
+    },
     "base": {
       "value": "8",
       "type": "spacing"
@@ -2217,6 +2225,10 @@
     },
     "fluid-900": {
       "value": "min( max( {space.fluid.sp900.min},  {space.fluid.sp900.fluid}) ,{space.fluid.sp900.max})",
+      "type": "spacing"
+    },
+    "fluid-200-6000": {
+      "value": "min( max( {space.fluid.200-6000.min},  {space.fluid.200-6000.fluid}) ,{space.fluid.200-6000.max})",
       "type": "spacing"
     },
     "fluid": {
@@ -2482,11 +2494,11 @@
       },
       "sp900": {
         "min": {
-          "value": "{space.1500}",
+          "value": "{space.1600}",
           "type": "spacing"
         },
         "max": {
-          "value": "{space.2500}",
+          "value": "{space.2600}",
           "type": "spacing"
         },
         "v": {
@@ -2503,6 +2515,32 @@
         },
         "clamp": {
           "value": "min( max( {space.fluid.sp900.min},  {space.fluid.sp900.fluid}) ,{space.fluid.sp900.max})",
+          "type": "spacing"
+        }
+      },
+      "200-6000": {
+        "min": {
+          "value": "{space.200}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.6000}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.200-6000.max}-{space.fluid.200-6000.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.200-6000.max} - {viewport.max} * {space.fluid.200-6000.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.200-6000.v} + {space.fluid.200-6000.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.200-6000.min},  {space.fluid.200-6000.fluid}) ,{space.fluid.200-6000.max})",
           "type": "spacing"
         }
       }
@@ -2729,6 +2767,10 @@
     },
     "fluid-900": {
       "value": "min( max( {size.fluid.sp900.min},  {size.fluid.sp900.fluid}) ,{size.fluid.sp900.max})",
+      "type": "sizing"
+    },
+    "fluid-200-6750": {
+      "value": "min( max( {size.fluid.200-6750.min},  {size.fluid.200-6750.fluid}) ,{size.fluid.200-6750.max})",
       "type": "sizing"
     },
     "fluid": {
@@ -2994,11 +3036,11 @@
       },
       "sp900": {
         "min": {
-          "value": "{size.1500}",
+          "value": "{size.1400}",
           "type": "sizing"
         },
         "max": {
-          "value": "{size.2500}",
+          "value": "{size.2600}",
           "type": "sizing"
         },
         "v": {
@@ -3015,6 +3057,32 @@
         },
         "clamp": {
           "value": "min( max( {size.fluid.sp900.min},  {size.fluid.sp900.fluid}) ,{size.fluid.sp900.max})",
+          "type": "sizing"
+        }
+      },
+      "200-6750": {
+        "min": {
+          "value": "{size.200}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.6750}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.200-6750.max}-{size.fluid.200-6750.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.200-6750.max} - {viewport.max} * {size.fluid.200-6750.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.200-6750.v} + {size.fluid.200-6750.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.200-6750.min},  {size.fluid.200-6750.fluid}) ,{size.fluid.200-6750.max})",
           "type": "sizing"
         }
       }
@@ -3054,6 +3122,122 @@
     "max": {
       "value": "1904",
       "type": "sizing"
+    }
+  },
+  "font-scale": {
+    "const": {
+      "min": {
+        "f0": {
+          "value": "16",
+          "type": "fontSizes"
+        },
+        "r": {
+          "value": "2",
+          "type": "fontSizes"
+        },
+        "n": {
+          "value": "5",
+          "type": "fontSizes"
+        }
+      },
+      "max": {
+        "f0": {
+          "value": "18",
+          "type": "fontSizes"
+        },
+        "r": {
+          "value": "5",
+          "type": "fontSizes"
+        },
+        "n": {
+          "value": "5",
+          "type": "fontSizes"
+        }
+      }
+    },
+    "f0": {
+      "min": {
+        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(0/{font-scale.const.min.n})/5),1)",
+        "type": "fontSizes"
+      },
+      "max": {
+        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(0/{font-scale.const.max.n})/5),1)",
+        "type": "fontSizes"
+      },
+      "v": {
+        "value": "100 * ({font-scale.f0.max}-{font-scale.f0.min}) / ({viewport.max}-{viewport.min})",
+        "type": "fontSizes"
+      },
+      "r": {
+        "value": "( {viewport.min} * {font-scale.f0.max} - {viewport.max} * {font-scale.f0.min}) / ({viewport.min}-{viewport.max})",
+        "type": "fontSizes"
+      },
+      "fluid": {
+        "value": "round(({viewport.width}/100) * {font-scale.f0.v} + {font-scale.f0.r})",
+        "type": "fontSizes"
+      }
+    }
+  },
+  "font-size": {
+    "f-4": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-4/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f-3": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-3/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f-2": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-2/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f-1": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-1/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f0": {
+      "value": "min( max( {font-scale.f0.min},  {font-scale.f0.fluid}) ,{font-scale.f0.max})",
+      "type": "fontSizes"
+    },
+    "f1": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(1/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f2": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(2/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f3": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(3/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f4": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(4/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f5": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(5/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f6": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(6/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f7": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(7/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f8": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(8/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f9": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(9/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
+    },
+    "f10": {
+      "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(10/{font-scale.const.min.n})/5),1)",
+      "type": "fontSizes"
     }
   }
 }

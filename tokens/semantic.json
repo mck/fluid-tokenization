@@ -45,7 +45,7 @@
           "type": "color"
         },
         "overlay": {
-          "value": "{color.white-alpha.400}",
+          "value": "{color.white-alpha.600}",
           "type": "color"
         }
       },
@@ -1057,7 +1057,7 @@
           "type": "spacing"
         },
         "xl": {
-          "value": "{space.800}",
+          "value": "{space.fluid-700}",
           "type": "spacing"
         },
         "xxl": {
@@ -1089,7 +1089,7 @@
       },
       "section": {
         "xxs": {
-          "value": "{space.500}",
+          "value": "{space.fluid-200-6000}",
           "type": "spacing"
         },
         "xs": {
@@ -1109,7 +1109,7 @@
           "type": "spacing"
         },
         "xl": {
-          "value": "{space.2200}",
+          "value": "{space.fluid-900}",
           "type": "spacing"
         },
         "xxl": {
