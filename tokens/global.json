@@ -2192,43 +2192,43 @@
       "type": "spacing"
     },
     "fluid-50": {
-      "value": "min( max( {space.fluid.sp50.min},  {space.fluid.sp50.fluid}) ,{space.fluid.sp50.max})",
+      "value": "min( max( {space.fluid.50.min},  {space.fluid.50.fluid}) ,{space.fluid.50.max})",
       "type": "spacing"
     },
     "fluid-100": {
-      "value": "min( max( {space.fluid.sp100.min},  {space.fluid.sp100.fluid}) ,{space.fluid.sp100.max})",
+      "value": "min( max( {space.fluid.100.min},  {space.fluid.100.fluid}) ,{space.fluid.100.max})",
       "type": "spacing"
     },
     "fluid-200": {
-      "value": "min( max( {space.fluid.sp200.min},  {space.fluid.sp200.fluid}) ,{space.fluid.sp200.max})",
+      "value": "min( max( {space.fluid.200.min},  {space.fluid.200.fluid}) ,{space.fluid.200.max})",
       "type": "spacing"
     },
     "fluid-300": {
-      "value": "min( max( {space.fluid.sp300.min},  {space.fluid.sp300.fluid}) ,{space.fluid.sp300.max})",
+      "value": "min( max( {space.fluid.300.min},  {space.fluid.300.fluid}) ,{space.fluid.300.max})",
       "type": "spacing"
     },
     "fluid-400": {
-      "value": "min( max( {space.fluid.sp400.min},  {space.fluid.sp400.fluid}) ,{space.fluid.sp400.max})",
+      "value": "min( max( {space.fluid.400.min},  {space.fluid.400.fluid}) ,{space.fluid.400.max})",
       "type": "spacing"
     },
     "fluid-500": {
-      "value": "min( max( {space.fluid.sp500.min},  {space.fluid.sp500.fluid}) ,{space.fluid.sp500.max})",
+      "value": "min( max( {space.fluid.500.min},  {space.fluid.500.fluid}) ,{space.fluid.500.max})",
       "type": "spacing"
     },
     "fluid-600": {
-      "value": "min( max( {space.fluid.sp600.min},  {space.fluid.sp600.fluid}) ,{space.fluid.sp600.max})",
+      "value": "min( max( {space.fluid.600.min},  {space.fluid.600.fluid}) ,{space.fluid.600.max})",
       "type": "spacing"
     },
     "fluid-700": {
-      "value": "min( max( {space.fluid.sp700.min},  {space.fluid.sp700.fluid}) ,{space.fluid.sp700.max})",
+      "value": "min( max( {space.fluid.700.min},  {space.fluid.700.fluid}) ,{space.fluid.700.max})",
       "type": "spacing"
     },
     "fluid-800": {
-      "value": "min( max( {space.fluid.sp800.min},  {space.fluid.sp800.fluid}) ,{space.fluid.sp800.max})",
+      "value": "min( max( {space.fluid.800.min},  {space.fluid.800.fluid}) ,{space.fluid.800.max})",
       "type": "spacing"
     },
     "fluid-900": {
-      "value": "min( max( {space.fluid.sp900.min},  {space.fluid.sp900.fluid}) ,{space.fluid.sp900.max})",
+      "value": "min( max( {space.fluid.900.min},  {space.fluid.900.fluid}) ,{space.fluid.900.max})",
       "type": "spacing"
     },
     "fluid-200-6000": {
@@ -2236,7 +2236,7 @@
       "type": "spacing"
     },
     "fluid": {
-      "sp50": {
+      "50": {
         "min": {
           "value": "{space.50}",
           "type": "spacing"
@@ -2246,23 +2246,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp50.max}-{space.fluid.sp50.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.50.max}-{space.fluid.50.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp50.max} - {viewport.max} * {space.fluid.sp50.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.50.max} - {viewport.max} * {space.fluid.50.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp50.v} + {space.fluid.sp50.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.50.v} + {space.fluid.50.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp50.min},  {space.fluid.sp50.fluid}) ,{space.fluid.sp50.max})",
+          "value": "min( max( {space.fluid.50.min},  {space.fluid.50.fluid}) ,{space.fluid.50.max})",
           "type": "spacing"
         }
       },
-      "sp100": {
+      "100": {
         "min": {
           "value": "{space.100}",
           "type": "spacing"
@@ -2272,23 +2272,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp100.max}-{space.fluid.sp100.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.100.max}-{space.fluid.100.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp100.max} - {viewport.max} * {space.fluid.sp100.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.100.max} - {viewport.max} * {space.fluid.100.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp100.v} + {space.fluid.sp100.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.100.v} + {space.fluid.100.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp100.min},  {space.fluid.sp100.fluid}) ,{space.fluid.sp100.max})",
+          "value": "min( max( {space.fluid.100.min},  {space.fluid.100.fluid}) ,{space.fluid.100.max})",
           "type": "spacing"
         }
       },
-      "sp150": {
+      "150": {
         "min": {
           "value": "{space.150}",
           "type": "spacing"
@@ -2298,23 +2298,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp150.max}-{space.fluid.sp150.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.150.max}-{space.fluid.150.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp150.max} - {viewport.max} * {space.fluid.sp150.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.150.max} - {viewport.max} * {space.fluid.150.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp150.v} + {space.fluid.sp150.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.150.v} + {space.fluid.150.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp150.min},  {space.fluid.sp150.fluid}) ,{space.fluid.sp150.max})",
+          "value": "min( max( {space.fluid.150.min},  {space.fluid.150.fluid}) ,{space.fluid.150.max})",
           "type": "spacing"
         }
       },
-      "sp200": {
+      "200": {
         "min": {
           "value": "{space.200}",
           "type": "spacing"
@@ -2324,23 +2324,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp200.max}-{space.fluid.sp200.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.200.max}-{space.fluid.200.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp200.max} - {viewport.max} * {space.fluid.sp200.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.200.max} - {viewport.max} * {space.fluid.200.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp200.v} + {space.fluid.sp200.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.200.v} + {space.fluid.200.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp200.min},  {space.fluid.sp200.fluid}) ,{space.fluid.sp200.max})",
+          "value": "min( max( {space.fluid.200.min},  {space.fluid.200.fluid}) ,{space.fluid.200.max})",
           "type": "spacing"
         }
       },
-      "sp300": {
+      "300": {
         "min": {
           "value": "{space.250}",
           "type": "spacing"
@@ -2350,23 +2350,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp300.max}-{space.fluid.sp300.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.300.max}-{space.fluid.300.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp300.max} - {viewport.max} * {space.fluid.sp300.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.300.max} - {viewport.max} * {space.fluid.300.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp300.v} + {space.fluid.sp300.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.300.v} + {space.fluid.300.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp300.min},  {space.fluid.sp300.fluid}) ,{space.fluid.sp300.max})",
+          "value": "min( max( {space.fluid.300.min},  {space.fluid.300.fluid}) ,{space.fluid.300.max})",
           "type": "spacing"
         }
       },
-      "sp400": {
+      "400": {
         "min": {
           "value": "{space.300}",
           "type": "spacing"
@@ -2376,23 +2376,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp400.max}-{space.fluid.sp400.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.400.max}-{space.fluid.400.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp400.max} - {viewport.max} * {space.fluid.sp400.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.400.max} - {viewport.max} * {space.fluid.400.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp400.v} + {space.fluid.sp400.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.400.v} + {space.fluid.400.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp400.min},  {space.fluid.sp400.fluid}) ,{space.fluid.sp400.max})",
+          "value": "min( max( {space.fluid.400.min},  {space.fluid.400.fluid}) ,{space.fluid.400.max})",
           "type": "spacing"
         }
       },
-      "sp500": {
+      "500": {
         "min": {
           "value": "{space.400}",
           "type": "spacing"
@@ -2402,23 +2402,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp500.max}-{space.fluid.sp500.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.500.max}-{space.fluid.500.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp500.max} - {viewport.max} * {space.fluid.sp500.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.500.max} - {viewport.max} * {space.fluid.500.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp500.v} + {space.fluid.sp500.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.500.v} + {space.fluid.500.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp500.min},  {space.fluid.sp500.fluid}) ,{space.fluid.sp500.max})",
+          "value": "min( max( {space.fluid.500.min},  {space.fluid.500.fluid}) ,{space.fluid.500.max})",
           "type": "spacing"
         }
       },
-      "sp600": {
+      "600": {
         "min": {
           "value": "{space.600}",
           "type": "spacing"
@@ -2428,23 +2428,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp600.max}-{space.fluid.sp600.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.600.max}-{space.fluid.600.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp600.max} - {viewport.max} * {space.fluid.sp600.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.600.max} - {viewport.max} * {space.fluid.600.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp600.v} + {space.fluid.sp600.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.600.v} + {space.fluid.600.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp600.min},  {space.fluid.sp600.fluid}) ,{space.fluid.sp600.max})",
+          "value": "min( max( {space.fluid.600.min},  {space.fluid.600.fluid}) ,{space.fluid.600.max})",
           "type": "spacing"
         }
       },
-      "sp700": {
+      "700": {
         "min": {
           "value": "{space.800}",
           "type": "spacing"
@@ -2454,23 +2454,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp700.max}-{space.fluid.sp700.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.700.max}-{space.fluid.700.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp700.max} - {viewport.max} * {space.fluid.sp700.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.700.max} - {viewport.max} * {space.fluid.700.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp700.v} + {space.fluid.sp700.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.700.v} + {space.fluid.700.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp700.min},  {space.fluid.sp700.fluid}) ,{space.fluid.sp700.max})",
+          "value": "min( max( {space.fluid.700.min},  {space.fluid.700.fluid}) ,{space.fluid.700.max})",
           "type": "spacing"
         }
       },
-      "sp800": {
+      "800": {
         "min": {
           "value": "{space.1200}",
           "type": "spacing"
@@ -2480,23 +2480,23 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp800.max}-{space.fluid.sp800.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.800.max}-{space.fluid.800.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp800.max} - {viewport.max} * {space.fluid.sp800.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.800.max} - {viewport.max} * {space.fluid.800.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp800.v} + {space.fluid.sp800.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.800.v} + {space.fluid.800.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp800.min},  {space.fluid.sp800.fluid}) ,{space.fluid.sp800.max})",
+          "value": "min( max( {space.fluid.800.min},  {space.fluid.800.fluid}) ,{space.fluid.800.max})",
           "type": "spacing"
         }
       },
-      "sp900": {
+      "900": {
         "min": {
           "value": "{space.1600}",
           "type": "spacing"
@@ -2506,19 +2506,19 @@
           "type": "spacing"
         },
         "v": {
-          "value": "100 * ({space.fluid.sp900.max}-{space.fluid.sp900.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({space.fluid.900.max}-{space.fluid.900.min}) / ({viewport.max}-{viewport.min})",
           "type": "spacing"
         },
         "r": {
-          "value": "( {viewport.min} * {space.fluid.sp900.max} - {viewport.max} * {space.fluid.sp900.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {space.fluid.900.max} - {viewport.max} * {space.fluid.900.min}) / ({viewport.min}-{viewport.max})",
           "type": "spacing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {space.fluid.sp900.v} + {space.fluid.sp900.r})",
+          "value": "round(({viewport.width}/100) * {space.fluid.900.v} + {space.fluid.900.r})",
           "type": "spacing"
         },
         "clamp": {
-          "value": "min( max( {space.fluid.sp900.min},  {space.fluid.sp900.fluid}) ,{space.fluid.sp900.max})",
+          "value": "min( max( {space.fluid.900.min},  {space.fluid.900.fluid}) ,{space.fluid.900.max})",
           "type": "spacing"
         }
       },
@@ -2734,43 +2734,43 @@
       "type": "sizing"
     },
     "fluid-50": {
-      "value": "min( max( {size.fluid.sp50.min},  {size.fluid.sp50.fluid}) ,{size.fluid.sp50.max})",
+      "value": "min( max( {size.fluid.50.min},  {size.fluid.50.fluid}) ,{size.fluid.50.max})",
       "type": "sizing"
     },
     "fluid-100": {
-      "value": "min( max( {size.fluid.sp100.min},  {size.fluid.sp100.fluid}) ,{size.fluid.sp100.max})",
+      "value": "min( max( {size.fluid.100.min},  {size.fluid.100.fluid}) ,{size.fluid.100.max})",
       "type": "sizing"
     },
     "fluid-200": {
-      "value": "min( max( {size.fluid.sp200.min},  {size.fluid.sp200.fluid}) ,{size.fluid.sp200.max})",
+      "value": "min( max( {size.fluid.200.min},  {size.fluid.200.fluid}) ,{size.fluid.200.max})",
       "type": "sizing"
     },
     "fluid-300": {
-      "value": "min( max( {size.fluid.sp300.min},  {size.fluid.sp300.fluid}) ,{size.fluid.sp300.max})",
+      "value": "min( max( {size.fluid.300.min},  {size.fluid.300.fluid}) ,{size.fluid.300.max})",
       "type": "sizing"
     },
     "fluid-400": {
-      "value": "min( max( {size.fluid.sp400.min},  {size.fluid.sp400.fluid}) ,{size.fluid.sp400.max})",
+      "value": "min( max( {size.fluid.400.min},  {size.fluid.400.fluid}) ,{size.fluid.400.max})",
       "type": "sizing"
     },
     "fluid-500": {
-      "value": "min( max( {size.fluid.sp500.min},  {size.fluid.sp500.fluid}) ,{size.fluid.sp500.max})",
+      "value": "min( max( {size.fluid.500.min},  {size.fluid.500.fluid}) ,{size.fluid.500.max})",
       "type": "sizing"
     },
     "fluid-600": {
-      "value": "min( max( {size.fluid.sp600.min},  {size.fluid.sp600.fluid}) ,{size.fluid.sp600.max})",
+      "value": "min( max( {size.fluid.600.min},  {size.fluid.600.fluid}) ,{size.fluid.600.max})",
       "type": "sizing"
     },
     "fluid-700": {
-      "value": "min( max( {size.fluid.sp700.min},  {size.fluid.sp700.fluid}) ,{size.fluid.sp700.max})",
+      "value": "min( max( {size.fluid.700.min},  {size.fluid.700.fluid}) ,{size.fluid.700.max})",
       "type": "sizing"
     },
     "fluid-800": {
-      "value": "min( max( {size.fluid.sp800.min},  {size.fluid.sp800.fluid}) ,{size.fluid.sp800.max})",
+      "value": "min( max( {size.fluid.800.min},  {size.fluid.800.fluid}) ,{size.fluid.800.max})",
       "type": "sizing"
     },
     "fluid-900": {
-      "value": "min( max( {size.fluid.sp900.min},  {size.fluid.sp900.fluid}) ,{size.fluid.sp900.max})",
+      "value": "min( max( {size.fluid.900.min},  {size.fluid.900.fluid}) ,{size.fluid.900.max})",
       "type": "sizing"
     },
     "fluid-200-6750": {
@@ -2778,7 +2778,7 @@
       "type": "sizing"
     },
     "fluid": {
-      "sp50": {
+      "50": {
         "min": {
           "value": "{size.50}",
           "type": "sizing"
@@ -2788,23 +2788,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp50.max}-{size.fluid.sp50.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.50.max}-{size.fluid.50.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp50.max} - {viewport.max} * {size.fluid.sp50.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.50.max} - {viewport.max} * {size.fluid.50.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp50.v} + {size.fluid.sp50.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.50.v} + {size.fluid.50.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp50.min},  {size.fluid.sp50.fluid}) ,{size.fluid.sp50.max})",
+          "value": "min( max( {size.fluid.50.min},  {size.fluid.50.fluid}) ,{size.fluid.50.max})",
           "type": "sizing"
         }
       },
-      "sp100": {
+      "100": {
         "min": {
           "value": "{size.100}",
           "type": "sizing"
@@ -2814,23 +2814,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp100.max}-{size.fluid.sp100.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.100.max}-{size.fluid.100.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp100.max} - {viewport.max} * {size.fluid.sp100.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.100.max} - {viewport.max} * {size.fluid.100.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp100.v} + {size.fluid.sp100.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.100.v} + {size.fluid.100.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp100.min},  {size.fluid.sp100.fluid}) ,{size.fluid.sp100.max})",
+          "value": "min( max( {size.fluid.100.min},  {size.fluid.100.fluid}) ,{size.fluid.100.max})",
           "type": "sizing"
         }
       },
-      "sp150": {
+      "150": {
         "min": {
           "value": "{size.150}",
           "type": "sizing"
@@ -2840,23 +2840,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp150.max}-{size.fluid.sp150.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.150.max}-{size.fluid.150.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp150.max} - {viewport.max} * {size.fluid.sp150.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.150.max} - {viewport.max} * {size.fluid.150.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp150.v} + {size.fluid.sp150.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.150.v} + {size.fluid.150.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp150.min},  {size.fluid.sp150.fluid}) ,{size.fluid.sp150.max})",
+          "value": "min( max( {size.fluid.150.min},  {size.fluid.150.fluid}) ,{size.fluid.150.max})",
           "type": "sizing"
         }
       },
-      "sp200": {
+      "200": {
         "min": {
           "value": "{size.200}",
           "type": "sizing"
@@ -2866,23 +2866,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp200.max}-{size.fluid.sp200.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.200.max}-{size.fluid.200.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp200.max} - {viewport.max} * {size.fluid.sp200.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.200.max} - {viewport.max} * {size.fluid.200.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp200.v} + {size.fluid.sp200.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.200.v} + {size.fluid.200.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp200.min},  {size.fluid.sp200.fluid}) ,{size.fluid.sp200.max})",
+          "value": "min( max( {size.fluid.200.min},  {size.fluid.200.fluid}) ,{size.fluid.200.max})",
           "type": "sizing"
         }
       },
-      "sp300": {
+      "300": {
         "min": {
           "value": "{size.250}",
           "type": "sizing"
@@ -2892,23 +2892,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp300.max}-{size.fluid.sp300.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.300.max}-{size.fluid.300.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp300.max} - {viewport.max} * {size.fluid.sp300.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.300.max} - {viewport.max} * {size.fluid.300.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp300.v} + {size.fluid.sp300.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.300.v} + {size.fluid.300.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp300.min},  {size.fluid.sp300.fluid}) ,{size.fluid.sp300.max})",
+          "value": "min( max( {size.fluid.300.min},  {size.fluid.300.fluid}) ,{size.fluid.300.max})",
           "type": "sizing"
         }
       },
-      "sp400": {
+      "400": {
         "min": {
           "value": "{size.300}",
           "type": "sizing"
@@ -2918,23 +2918,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp400.max}-{size.fluid.sp400.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.400.max}-{size.fluid.400.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp400.max} - {viewport.max} * {size.fluid.sp400.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.400.max} - {viewport.max} * {size.fluid.400.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp400.v} + {size.fluid.sp400.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.400.v} + {size.fluid.400.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp400.min},  {size.fluid.sp400.fluid}) ,{size.fluid.sp400.max})",
+          "value": "min( max( {size.fluid.400.min},  {size.fluid.400.fluid}) ,{size.fluid.400.max})",
           "type": "sizing"
         }
       },
-      "sp500": {
+      "500": {
         "min": {
           "value": "{size.400}",
           "type": "sizing"
@@ -2944,23 +2944,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp500.max}-{size.fluid.sp500.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.500.max}-{size.fluid.500.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp500.max} - {viewport.max} * {size.fluid.sp500.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.500.max} - {viewport.max} * {size.fluid.500.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp500.v} + {size.fluid.sp500.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.500.v} + {size.fluid.500.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp500.min},  {size.fluid.sp500.fluid}) ,{size.fluid.sp500.max})",
+          "value": "min( max( {size.fluid.500.min},  {size.fluid.500.fluid}) ,{size.fluid.500.max})",
           "type": "sizing"
         }
       },
-      "sp600": {
+      "600": {
         "min": {
           "value": "{size.600}",
           "type": "sizing"
@@ -2970,23 +2970,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp600.max}-{size.fluid.sp600.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.600.max}-{size.fluid.600.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp600.max} - {viewport.max} * {size.fluid.sp600.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.600.max} - {viewport.max} * {size.fluid.600.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp600.v} + {size.fluid.sp600.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.600.v} + {size.fluid.600.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp600.min},  {size.fluid.sp600.fluid}) ,{size.fluid.sp600.max})",
+          "value": "min( max( {size.fluid.600.min},  {size.fluid.600.fluid}) ,{size.fluid.600.max})",
           "type": "sizing"
         }
       },
-      "sp700": {
+      "700": {
         "min": {
           "value": "{size.800}",
           "type": "sizing"
@@ -2996,23 +2996,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp700.max}-{size.fluid.sp700.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.700.max}-{size.fluid.700.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp700.max} - {viewport.max} * {size.fluid.sp700.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.700.max} - {viewport.max} * {size.fluid.700.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp700.v} + {size.fluid.sp700.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.700.v} + {size.fluid.700.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp700.min},  {size.fluid.sp700.fluid}) ,{size.fluid.sp700.max})",
+          "value": "min( max( {size.fluid.700.min},  {size.fluid.700.fluid}) ,{size.fluid.700.max})",
           "type": "sizing"
         }
       },
-      "sp800": {
+      "800": {
         "min": {
           "value": "{size.1200}",
           "type": "sizing"
@@ -3022,23 +3022,23 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp800.max}-{size.fluid.sp800.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.800.max}-{size.fluid.800.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp800.max} - {viewport.max} * {size.fluid.sp800.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.800.max} - {viewport.max} * {size.fluid.800.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp800.v} + {size.fluid.sp800.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.800.v} + {size.fluid.800.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp800.min},  {size.fluid.sp800.fluid}) ,{size.fluid.sp800.max})",
+          "value": "min( max( {size.fluid.800.min},  {size.fluid.800.fluid}) ,{size.fluid.800.max})",
           "type": "sizing"
         }
       },
-      "sp900": {
+      "900": {
         "min": {
           "value": "{size.1400}",
           "type": "sizing"
@@ -3048,19 +3048,19 @@
           "type": "sizing"
         },
         "v": {
-          "value": "100 * ({size.fluid.sp900.max}-{size.fluid.sp900.min}) / ({viewport.max}-{viewport.min})",
+          "value": "100 * ({size.fluid.900.max}-{size.fluid.900.min}) / ({viewport.max}-{viewport.min})",
           "type": "sizing"
         },
         "r": {
-          "value": "( {viewport.min} * {size.fluid.sp900.max} - {viewport.max} * {size.fluid.sp900.min}) / ({viewport.min}-{viewport.max})",
+          "value": "( {viewport.min} * {size.fluid.900.max} - {viewport.max} * {size.fluid.900.min}) / ({viewport.min}-{viewport.max})",
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.sp900.v} + {size.fluid.sp900.r})",
+          "value": "round(({viewport.width}/100) * {size.fluid.900.v} + {size.fluid.900.r})",
           "type": "sizing"
         },
         "clamp": {
-          "value": "min( max( {size.fluid.sp900.min},  {size.fluid.sp900.fluid}) ,{size.fluid.sp900.max})",
+          "value": "min( max( {size.fluid.900.min},  {size.fluid.900.fluid}) ,{size.fluid.900.max})",
           "type": "sizing"
         }
       },
