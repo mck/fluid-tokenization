@@ -6,13 +6,13 @@
     },
     "default": {
       "label": {
-        "value": "{semantic.typography.Small.Regular}",
+        "value": "{semantic.typography.small.regular}",
         "type": "typography"
       }
     },
     "featured": {
       "label": {
-        "value": "{semantic.typography.Small.Bold}",
+        "value": "{semantic.typography.small.bold}",
         "type": "typography"
       }
     },
@@ -20,8 +20,8 @@
       "value": "{semantic.color.accent.default}",
       "type": "color"
     },
-    "gap": {
-      "value": "8",
+    "space-between": {
+      "value": "{semantic.space-between.comp.sm}",
       "type": "spacing"
     }
   }

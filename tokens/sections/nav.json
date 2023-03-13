@@ -1,44 +1,48 @@
 {
   "section": {
     "nav": {
-      "container": {
-        "value": {
-          "fill": "{section.nav.container-background}",
-          "verticalPadding": "{section.nav.padding-y}",
-          "horizontalPadding": "{section.nav.padding-x}"
-        },
-        "type": "composition"
-      },
-      "container-overlay": {
-        "value": "{color.gradient.overlay.dark.180-deg-↓}",
-        "type": "color",
-        "description": "The section container has a separate background and overlay. You could use the overlay to add a gradient or opacity layer on top of your background color or image fill."
-      },
-      "container-background": {
+      "container-background-color": {
         "value": "{semantic.color.bg.surface}",
         "type": "color",
         "description": "Every section container can have a unique background color or image. On top of the background a gradient or opactive layer can be applied. Use the container-overlay token to achieve this."
       },
-      "container-bg-image": {
-        "value": "https://images.unsplash.com/photo-1625603564899-36c11aa97c76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80",
-        "type": "asset",
-        "description": "Add an image address pointing to a public url"
-      },
       "padding-x": {
-        "value": "40",
+        "value": "{semantic.space-around.section.xxs}",
         "type": "spacing"
       },
       "padding-y": {
-        "value": "32",
+        "value": "{semantic.space-around.section.xxs}",
         "type": "spacing"
       },
-      "action-gap": {
-        "value": "{semantic.gap-modifier.x}*16",
+      "action-space-between": {
+        "value": "{semantic.space-between.section.xxs}",
         "type": "spacing"
       },
-      "logo-menu-gap": {
-        "value": "{semantic.gap-modifier.x}*64",
+      "logo-menu-space-between": {
+        "value": "{semantic.space-between.section.xl}",
         "type": "spacing"
+      },
+      "logo": {
+        "text-color": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color"
+        },
+        "text-size": {
+          "value": "{semantic.fontSize._base}",
+          "type": "fontSizes"
+        },
+        "icon-color": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color"
+        },
+        "icon-size": {
+          "value": "{semantic.size.section.sm}",
+          "type": "sizing"
+        },
+        "space-between": {
+          "value": "{semantic.space-between.comp.sm}",
+          "type": "spacing"
+        }
       }
     }
   }

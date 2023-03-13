@@ -5,33 +5,33 @@
       "type": "color"
     },
     "hover": {
-      "background": {
+      "background-color": {
         "value": "{semantic.color.bg.subtle}",
         "type": "color"
       },
       "label": {
-        "value": "{semantic.typography.Small.Regular}",
+        "value": "{semantic.typography.small.regular}",
         "type": "typography"
       }
     },
     "default": {
       "label": {
-        "value": "{semantic.typography.Small.Regular}",
+        "value": "{semantic.typography.small.regular}",
         "type": "typography"
       }
     },
     "active": {
       "label": {
-        "value": "{semantic.typography.Small.Bold}",
+        "value": "{semantic.typography.small.bold}",
         "type": "typography"
       }
     },
     "padding-x": {
-      "value": "10",
+      "value": "{semantic.space-around.comp.md}",
       "type": "spacing"
     },
     "padding-y": {
-      "value": "8",
+      "value": "{semantic.space-around.comp.sm}",
       "type": "spacing"
     },
     "border-radius": {
@@ -44,8 +44,8 @@
         "type": "color"
       },
       "hover": {
-        "background": {
-          "value": "{semantic.color.fg.disabled}",
+        "background-color": {
+          "value": "{color.black-alpha.300}",
           "type": "color"
         }
       }
