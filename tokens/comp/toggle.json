@@ -1,0 +1,48 @@
+{
+  "toggle": {
+    "unselected": {
+      "track": {
+        "background-color": {
+          "value": "{semantic.color.accent.disabled}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{semantic.color.accent.disabled}",
+          "type": "color"
+        }
+      },
+      "handle": {
+        "background-color": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{color.white}",
+          "type": "color"
+        }
+      }
+    },
+    "selected": {
+      "track": {
+        "background-color": {
+          "value": "{semantic.color.accent.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{semantic.color.accent.default}",
+          "type": "color"
+        }
+      },
+      "handle": {
+        "background-color": {
+          "value": "{color.white}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{color.white}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

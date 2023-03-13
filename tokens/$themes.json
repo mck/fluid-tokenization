@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "652b7e98aacea8040659c233e5dd41ebde95fc25",
+    "name": "default",
+    "selectedTokenSets": {
+      "global": "enabled",
+      "semantic": "enabled",
+      "comp/button": "enabled",
+      "comp/list-item": "enabled",
+      "comp/menu-item": "enabled",
+      "comp/toggle": "enabled",
+      "pattern/menu-bar": "enabled",
+      "pattern/card-user": "enabled",
+      "pattern/card-pricing": "enabled",
+      "sections/nav": "enabled",
+      "sections/hero": "enabled",
+      "sections/features": "enabled",
+      "sections/team": "enabled",
+      "sections/pricing": "enabled",
+      "sections/footer": "enabled",
+      "theme/semantic": "disabled",
+      "theme/sections": "disabled",
+      "theme/semantic-b1": "disabled",
+      "theme/sections_b1": "disabled",
+      "pattern/feature": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  }
+]

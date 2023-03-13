@@ -1,0 +1,92 @@
+{
+  "pattern": {
+    "card-pricing": {
+      "border-radius": {
+        "value": "{semantic.ui.border-radius} {semantic.ui.border-radius} {semantic.ui.border-radius} {semantic.ui.border-radius}",
+        "type": "borderRadius",
+        "description": "Modify the border radius of the pricing card. Use multiple values for individual radii: eg. 0 16 0 16\n"
+      },
+      "title": {
+        "color": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color",
+          "description": "Change this token to change the font-color of the title pricing card."
+        }
+      },
+      "sub-title": {
+        "color": {
+          "value": "{semantic.color.fg.subtle}",
+          "type": "color",
+          "description": "Change this token to change the font-color of the sub-title of the pricing card"
+        }
+      },
+      "list": {
+        "color": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color",
+          "description": "Change this token to change the font-color of the list in pricing card."
+        }
+      },
+      "default": {
+        "background": {
+          "value": "{semantic.color.bg.subtle}",
+          "type": "color",
+          "description": "Change this token to change the background color of the default pricing card."
+        },
+        "icon-color": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color",
+          "description": "Change this token to change the icon color in the default pricing card.\n"
+        }
+      },
+      "muted": {
+        "background": {
+          "value": "{semantic.color.bg.muted}",
+          "type": "color",
+          "description": "Change this token to change the background color of the muted pricing card\n"
+        },
+        "icon-color": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color",
+          "description": "Change this token to modify the icon color of the muted pricing card."
+        }
+      },
+      "padding-x": {
+        "value": "56",
+        "type": "spacing",
+        "description": "Modify this token to change the padding-x of the pricing card\n"
+      },
+      "padding-y": {
+        "value": "56",
+        "type": "spacing",
+        "description": "Modify this token to change the padding-y of the pricing card"
+      },
+      "gap-modifier": {
+        "value": "1",
+        "type": "spacing"
+      },
+      "gap": {
+        "value": "{pattern.card-pricing.gap-modifier}*32",
+        "type": "spacing"
+      },
+      "heading-gap": {
+        "value": "{pattern.card-pricing.gap-modifier}*8",
+        "type": "spacing"
+      },
+      "list-gap": {
+        "value": "{pattern.card-pricing.gap-modifier}*16",
+        "type": "spacing"
+      },
+      "icon-size": {
+        "value": "56",
+        "type": "sizing"
+      }
+    },
+    "pricing-card": {
+      "icon-size": {
+        "value": "56",
+        "type": "fontSizes"
+      }
+    }
+  }
+}

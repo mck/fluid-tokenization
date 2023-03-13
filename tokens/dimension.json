@@ -165,7 +165,7 @@
           "type": "sizing"
         },
         "fluid": {
-          "value": "round(({viewport.width}/100) * {size.fluid.fluid-50.v} + {size.fluid.fluid-50.r})",
+          "value": "round({size.fluid.fluid-50.v} * ({viewport.width}/100) + {size.fluid.fluid-50.r})",
           "type": "sizing"
         },
         "clamp": {

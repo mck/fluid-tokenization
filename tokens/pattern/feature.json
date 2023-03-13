@@ -1,0 +1,20 @@
+{
+  "pattern": {
+    "feature": {
+      "gap": {
+        "value": "{semantic.gap-modifier.x}*24",
+        "type": "spacing"
+      },
+      "content-gap": {
+        "value": "{semantic.gap-modifier.y}*8",
+        "type": "spacing"
+      },
+      "icon": {
+        "border-radii": {
+          "value": "{semantic.comp.border-radius}",
+          "type": "borderRadius"
+        }
+      }
+    }
+  }
+}

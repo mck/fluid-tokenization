@@ -1,11 +1,24 @@
 {
   "tokenSetOrder": [
-    "color",
-    "dimension",
-    "font",
-    "media/@600px",
-    "media/@960px",
-    "media/@1264px",
-    "media/@1904px"
+    "global",
+    "semantic",
+    "comp/button",
+    "comp/list-item",
+    "comp/menu-item",
+    "comp/toggle",
+    "pattern/menu-bar",
+    "pattern/feature",
+    "pattern/card-user",
+    "pattern/card-pricing",
+    "sections/nav",
+    "sections/hero",
+    "sections/features",
+    "sections/team",
+    "sections/pricing",
+    "sections/footer",
+    "theme/semantic",
+    "theme/sections",
+    "theme/semantic-b1",
+    "theme/sections_b1"
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "pattern": {
+    "menu-bar": {
+      "gap-modifier": {
+        "value": "1",
+        "type": "spacing",
+        "description": "Change this token to change the gap between the menu items"
+      },
+      "gap": {
+        "value": "{pattern.menu-bar.gap-modifier}*24",
+        "type": "spacing"
+      }
+    }
+  }
+}

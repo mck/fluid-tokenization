@@ -1,0 +1,103 @@
+{
+  "section": {
+    "features": {
+      "container": {
+        "value": {
+          "fill": "{section.features.container-background}",
+          "verticalPadding": "{section.features.padding-y}",
+          "horizontalPadding": "{section.features.padding-x}"
+        },
+        "type": "composition"
+      },
+      "container-overlay": {
+        "value": "{color.gradient.overlay.dark.180-deg-↓}",
+        "type": "color",
+        "description": "The section container has a separate background and overlay. You could use the overlay to add a gradient or opacity layer on top of your background color or image fill."
+      },
+      "container-background": {
+        "value": "{semantic.color.bg.surface}",
+        "type": "color",
+        "description": "Every section container can have a unique background color or image. On top of the background a gradient or opactive layer can be applied. Use the container-overlay token to achieve this."
+      },
+      "container-bg-image": {
+        "value": "https://images.unsplash.com/photo-1625603564899-36c11aa97c76?ixlib=rb-1.2.1&ixid=mnwxmja3fdb8mhxwag90by1wywdlfhx8fgvufdb8fhx8&auto=format&fit=crop&w=3774&q=80",
+        "type": "asset",
+        "description": "Add an image address pointing to a public url"
+      },
+      "padding-x": {
+        "value": "165",
+        "type": "spacing"
+      },
+      "padding-y": {
+        "value": "135",
+        "type": "spacing"
+      },
+      "color": {
+        "kicker": {
+          "value": "{semantic.color.fg.subtle}",
+          "type": "color"
+        },
+        "headline": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color"
+        },
+        "body": {
+          "value": "{semantic.color.fg.subtle}",
+          "type": "color"
+        },
+        "feature-text": {
+          "value": "{semantic.color.fg.muted}",
+          "type": "color"
+        },
+        "feature-heading": {
+          "value": "{semantic.color.fg.default}",
+          "type": "color"
+        },
+        "icon-background": {
+          "value": "{semantic.color.accent.default}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{semantic.color.fg.on-accent}",
+          "type": "color"
+        }
+      },
+      "gap": {
+        "value": "{semantic.gap-modifier.y}*96",
+        "type": "spacing"
+      },
+      "heading-block-gap": {
+        "value": "{semantic.gap-modifier.y}*16",
+        "type": "spacing"
+      },
+      "heading-gap": {
+        "value": "{semantic.gap-modifier.y}*8",
+        "type": "spacing"
+      },
+      "block-gap": {
+        "value": "{semantic.gap-modifier.y}*58",
+        "type": "spacing"
+      },
+      "row-gap": {
+        "value": "{semantic.gap-modifier.x}*56",
+        "type": "spacing"
+      },
+      "icon-1": {
+        "value": "heart",
+        "type": "icon"
+      },
+      "icon-2": {
+        "value": "heart",
+        "type": "icon"
+      },
+      "icon-3": {
+        "value": "heart",
+        "type": "icon"
+      },
+      "icon-4": {
+        "value": "heart",
+        "type": "icon"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "menu-item": {
+    "text-color": {
+      "value": "{semantic.color.fg.subtle}",
+      "type": "color"
+    },
+    "hover": {
+      "background": {
+        "value": "{semantic.color.bg.subtle}",
+        "type": "color"
+      },
+      "label": {
+        "value": "{semantic.typography.Small.Regular}",
+        "type": "typography"
+      }
+    },
+    "default": {
+      "label": {
+        "value": "{semantic.typography.Small.Regular}",
+        "type": "typography"
+      }
+    },
+    "active": {
+      "label": {
+        "value": "{semantic.typography.Small.Bold}",
+        "type": "typography"
+      }
+    },
+    "padding-x": {
+      "value": "10",
+      "type": "spacing"
+    },
+    "padding-y": {
+      "value": "8",
+      "type": "spacing"
+    },
+    "border-radius": {
+      "value": "{semantic.comp.border-radius}",
+      "type": "borderRadius"
+    },
+    "on-accent": {
+      "text-color": {
+        "value": "{semantic.color.fg.on-accent}",
+        "type": "color"
+      },
+      "hover": {
+        "background": {
+          "value": "{semantic.color.fg.disabled}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

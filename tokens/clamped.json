@@ -63,13 +63,8 @@
       "type": "dimension",
       "description": "resolves great in token studio and without px applied in SD, not working with px applied in SD"
     },
-    "breaking-expr": {
-      "value": "((({viewport.min}*{test.max})-({viewport.max}*{test.min})) / ({viewport.min}-{viewport.max})) + (((100 * ({test.max}-{test.min}) / ({viewport.max}-{viewport.min})) * {vw}))",
-      "type": "dimension",
-      "description": "breaks expr-eval if i try to do it inline to prevent the px problem"
-    },
     "clamp": {
-      "value": "clamped({test.min}, ((({viewport.min}*{test.max})-({viewport.max}*{test.min})) / ({viewport.min}-{viewport.max})) + (((100 * ({test.max}-{test.min}) / ({viewport.max}-{viewport.min})) * {vw})) ,{test.max})",
+      "value": "",
       "type": "dimension",
       "description": "Test new function for clamped in SD https://github.com/tokens-studio/figma-plugin/pull/1657"
     }
