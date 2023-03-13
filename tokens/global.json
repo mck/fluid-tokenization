@@ -2178,6 +2178,334 @@
     "base": {
       "value": "8",
       "type": "spacing"
+    },
+    "fluid-50": {
+      "value": "min( max( {space.fluid.sp50.min},  {space.fluid.sp50.fluid}) ,{space.fluid.sp50.max})",
+      "type": "spacing"
+    },
+    "fluid-100": {
+      "value": "min( max( {space.fluid.sp100.min},  {space.fluid.sp100.fluid}) ,{space.fluid.sp100.max})",
+      "type": "spacing"
+    },
+    "fluid-200": {
+      "value": "min( max( {space.fluid.sp200.min},  {space.fluid.sp200.fluid}) ,{space.fluid.sp200.max})",
+      "type": "spacing"
+    },
+    "fluid-300": {
+      "value": "min( max( {space.fluid.sp300.min},  {space.fluid.sp300.fluid}) ,{space.fluid.sp300.max})",
+      "type": "spacing"
+    },
+    "fluid-400": {
+      "value": "min( max( {space.fluid.sp400.min},  {space.fluid.sp400.fluid}) ,{space.fluid.sp400.max})",
+      "type": "spacing"
+    },
+    "fluid-500": {
+      "value": "min( max( {space.fluid.sp500.min},  {space.fluid.sp500.fluid}) ,{space.fluid.sp500.max})",
+      "type": "spacing"
+    },
+    "fluid-600": {
+      "value": "min( max( {space.fluid.sp600.min},  {space.fluid.sp600.fluid}) ,{space.fluid.sp600.max})",
+      "type": "spacing"
+    },
+    "fluid-700": {
+      "value": "min( max( {space.fluid.sp700.min},  {space.fluid.sp700.fluid}) ,{space.fluid.sp700.max})",
+      "type": "spacing"
+    },
+    "fluid-800": {
+      "value": "min( max( {space.fluid.sp800.min},  {space.fluid.sp800.fluid}) ,{space.fluid.sp800.max})",
+      "type": "spacing"
+    },
+    "fluid-900": {
+      "value": "min( max( {space.fluid.sp900.min},  {space.fluid.sp900.fluid}) ,{space.fluid.sp900.max})",
+      "type": "spacing"
+    },
+    "fluid": {
+      "sp50": {
+        "min": {
+          "value": "{space.50}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.50}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp50.max}-{space.fluid.sp50.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp50.max} - {viewport.max} * {space.fluid.sp50.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp50.v} + {space.fluid.sp50.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp50.min},  {space.fluid.sp50.fluid}) ,{space.fluid.sp50.max})",
+          "type": "spacing"
+        }
+      },
+      "sp100": {
+        "min": {
+          "value": "{space.100}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.100}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp100.max}-{space.fluid.sp100.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp100.max} - {viewport.max} * {space.fluid.sp100.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp100.v} + {space.fluid.sp100.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp100.min},  {space.fluid.sp100.fluid}) ,{space.fluid.sp100.max})",
+          "type": "spacing"
+        }
+      },
+      "sp150": {
+        "min": {
+          "value": "{space.150}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.150}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp150.max}-{space.fluid.sp150.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp150.max} - {viewport.max} * {space.fluid.sp150.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp150.v} + {space.fluid.sp150.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp150.min},  {space.fluid.sp150.fluid}) ,{space.fluid.sp150.max})",
+          "type": "spacing"
+        }
+      },
+      "sp200": {
+        "min": {
+          "value": "{space.200}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.200}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp200.max}-{space.fluid.sp200.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp200.max} - {viewport.max} * {space.fluid.sp200.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp200.v} + {space.fluid.sp200.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp200.min},  {space.fluid.sp200.fluid}) ,{space.fluid.sp200.max})",
+          "type": "spacing"
+        }
+      },
+      "sp300": {
+        "min": {
+          "value": "{space.250}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.300}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp300.max}-{space.fluid.sp300.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp300.max} - {viewport.max} * {space.fluid.sp300.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp300.v} + {space.fluid.sp300.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp300.min},  {space.fluid.sp300.fluid}) ,{space.fluid.sp300.max})",
+          "type": "spacing"
+        }
+      },
+      "sp400": {
+        "min": {
+          "value": "{space.300}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.500}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp400.max}-{space.fluid.sp400.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp400.max} - {viewport.max} * {space.fluid.sp400.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp400.v} + {space.fluid.sp400.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp400.min},  {space.fluid.sp400.fluid}) ,{space.fluid.sp400.max})",
+          "type": "spacing"
+        }
+      },
+      "sp500": {
+        "min": {
+          "value": "{space.400}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.700}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp500.max}-{space.fluid.sp500.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp500.max} - {viewport.max} * {space.fluid.sp500.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp500.v} + {space.fluid.sp500.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp500.min},  {space.fluid.sp500.fluid}) ,{space.fluid.sp500.max})",
+          "type": "spacing"
+        }
+      },
+      "sp600": {
+        "min": {
+          "value": "{space.600}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.1000}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp600.max}-{space.fluid.sp600.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp600.max} - {viewport.max} * {space.fluid.sp600.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp600.v} + {space.fluid.sp600.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp600.min},  {space.fluid.sp600.fluid}) ,{space.fluid.sp600.max})",
+          "type": "spacing"
+        }
+      },
+      "sp700": {
+        "min": {
+          "value": "{space.800}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.1200}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp700.max}-{space.fluid.sp700.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp700.max} - {viewport.max} * {space.fluid.sp700.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp700.v} + {space.fluid.sp700.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp700.min},  {space.fluid.sp700.fluid}) ,{space.fluid.sp700.max})",
+          "type": "spacing"
+        }
+      },
+      "sp800": {
+        "min": {
+          "value": "{space.1200}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.2000}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp800.max}-{space.fluid.sp800.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp800.max} - {viewport.max} * {space.fluid.sp800.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp800.v} + {space.fluid.sp800.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp800.min},  {space.fluid.sp800.fluid}) ,{space.fluid.sp800.max})",
+          "type": "spacing"
+        }
+      },
+      "sp900": {
+        "min": {
+          "value": "{space.1500}",
+          "type": "spacing"
+        },
+        "max": {
+          "value": "{space.2500}",
+          "type": "spacing"
+        },
+        "v": {
+          "value": "100 * ({space.fluid.sp900.max}-{space.fluid.sp900.min}) / ({viewport.max}-{viewport.min})",
+          "type": "spacing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {space.fluid.sp900.max} - {viewport.max} * {space.fluid.sp900.min}) / ({viewport.min}-{viewport.max})",
+          "type": "spacing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {space.fluid.sp900.v} + {space.fluid.sp900.r})",
+          "type": "spacing"
+        },
+        "clamp": {
+          "value": "min( max( {space.fluid.sp900.min},  {space.fluid.sp900.fluid}) ,{space.fluid.sp900.max})",
+          "type": "spacing"
+        }
+      }
     }
   },
   "borderWidth": {
@@ -2362,6 +2690,334 @@
     "base": {
       "value": "8",
       "type": "sizing"
+    },
+    "fluid-50": {
+      "value": "min( max( {size.fluid.sp50.min},  {size.fluid.sp50.fluid}) ,{size.fluid.sp50.max})",
+      "type": "sizing"
+    },
+    "fluid-100": {
+      "value": "min( max( {size.fluid.sp100.min},  {size.fluid.sp100.fluid}) ,{size.fluid.sp100.max})",
+      "type": "sizing"
+    },
+    "fluid-200": {
+      "value": "min( max( {size.fluid.sp200.min},  {size.fluid.sp200.fluid}) ,{size.fluid.sp200.max})",
+      "type": "sizing"
+    },
+    "fluid-300": {
+      "value": "min( max( {size.fluid.sp300.min},  {size.fluid.sp300.fluid}) ,{size.fluid.sp300.max})",
+      "type": "sizing"
+    },
+    "fluid-400": {
+      "value": "min( max( {size.fluid.sp400.min},  {size.fluid.sp400.fluid}) ,{size.fluid.sp400.max})",
+      "type": "sizing"
+    },
+    "fluid-500": {
+      "value": "min( max( {size.fluid.sp500.min},  {size.fluid.sp500.fluid}) ,{size.fluid.sp500.max})",
+      "type": "sizing"
+    },
+    "fluid-600": {
+      "value": "min( max( {size.fluid.sp600.min},  {size.fluid.sp600.fluid}) ,{size.fluid.sp600.max})",
+      "type": "sizing"
+    },
+    "fluid-700": {
+      "value": "min( max( {size.fluid.sp700.min},  {size.fluid.sp700.fluid}) ,{size.fluid.sp700.max})",
+      "type": "sizing"
+    },
+    "fluid-800": {
+      "value": "min( max( {size.fluid.sp800.min},  {size.fluid.sp800.fluid}) ,{size.fluid.sp800.max})",
+      "type": "sizing"
+    },
+    "fluid-900": {
+      "value": "min( max( {size.fluid.sp900.min},  {size.fluid.sp900.fluid}) ,{size.fluid.sp900.max})",
+      "type": "sizing"
+    },
+    "fluid": {
+      "sp50": {
+        "min": {
+          "value": "{size.50}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.50}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp50.max}-{size.fluid.sp50.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp50.max} - {viewport.max} * {size.fluid.sp50.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp50.v} + {size.fluid.sp50.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp50.min},  {size.fluid.sp50.fluid}) ,{size.fluid.sp50.max})",
+          "type": "sizing"
+        }
+      },
+      "sp100": {
+        "min": {
+          "value": "{size.100}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.100}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp100.max}-{size.fluid.sp100.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp100.max} - {viewport.max} * {size.fluid.sp100.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp100.v} + {size.fluid.sp100.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp100.min},  {size.fluid.sp100.fluid}) ,{size.fluid.sp100.max})",
+          "type": "sizing"
+        }
+      },
+      "sp150": {
+        "min": {
+          "value": "{size.150}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.150}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp150.max}-{size.fluid.sp150.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp150.max} - {viewport.max} * {size.fluid.sp150.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp150.v} + {size.fluid.sp150.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp150.min},  {size.fluid.sp150.fluid}) ,{size.fluid.sp150.max})",
+          "type": "sizing"
+        }
+      },
+      "sp200": {
+        "min": {
+          "value": "{size.200}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.200}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp200.max}-{size.fluid.sp200.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp200.max} - {viewport.max} * {size.fluid.sp200.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp200.v} + {size.fluid.sp200.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp200.min},  {size.fluid.sp200.fluid}) ,{size.fluid.sp200.max})",
+          "type": "sizing"
+        }
+      },
+      "sp300": {
+        "min": {
+          "value": "{size.250}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.300}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp300.max}-{size.fluid.sp300.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp300.max} - {viewport.max} * {size.fluid.sp300.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp300.v} + {size.fluid.sp300.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp300.min},  {size.fluid.sp300.fluid}) ,{size.fluid.sp300.max})",
+          "type": "sizing"
+        }
+      },
+      "sp400": {
+        "min": {
+          "value": "{size.300}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.500}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp400.max}-{size.fluid.sp400.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp400.max} - {viewport.max} * {size.fluid.sp400.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp400.v} + {size.fluid.sp400.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp400.min},  {size.fluid.sp400.fluid}) ,{size.fluid.sp400.max})",
+          "type": "sizing"
+        }
+      },
+      "sp500": {
+        "min": {
+          "value": "{size.400}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.700}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp500.max}-{size.fluid.sp500.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp500.max} - {viewport.max} * {size.fluid.sp500.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp500.v} + {size.fluid.sp500.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp500.min},  {size.fluid.sp500.fluid}) ,{size.fluid.sp500.max})",
+          "type": "sizing"
+        }
+      },
+      "sp600": {
+        "min": {
+          "value": "{size.600}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.1000}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp600.max}-{size.fluid.sp600.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp600.max} - {viewport.max} * {size.fluid.sp600.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp600.v} + {size.fluid.sp600.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp600.min},  {size.fluid.sp600.fluid}) ,{size.fluid.sp600.max})",
+          "type": "sizing"
+        }
+      },
+      "sp700": {
+        "min": {
+          "value": "{size.800}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.1200}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp700.max}-{size.fluid.sp700.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp700.max} - {viewport.max} * {size.fluid.sp700.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp700.v} + {size.fluid.sp700.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp700.min},  {size.fluid.sp700.fluid}) ,{size.fluid.sp700.max})",
+          "type": "sizing"
+        }
+      },
+      "sp800": {
+        "min": {
+          "value": "{size.1200}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.2000}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp800.max}-{size.fluid.sp800.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp800.max} - {viewport.max} * {size.fluid.sp800.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp800.v} + {size.fluid.sp800.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp800.min},  {size.fluid.sp800.fluid}) ,{size.fluid.sp800.max})",
+          "type": "sizing"
+        }
+      },
+      "sp900": {
+        "min": {
+          "value": "{size.1500}",
+          "type": "sizing"
+        },
+        "max": {
+          "value": "{size.2500}",
+          "type": "sizing"
+        },
+        "v": {
+          "value": "100 * ({size.fluid.sp900.max}-{size.fluid.sp900.min}) / ({viewport.max}-{viewport.min})",
+          "type": "sizing"
+        },
+        "r": {
+          "value": "( {viewport.min} * {size.fluid.sp900.max} - {viewport.max} * {size.fluid.sp900.min}) / ({viewport.min}-{viewport.max})",
+          "type": "sizing"
+        },
+        "fluid": {
+          "value": "round(({viewport.width}/100) * {size.fluid.sp900.v} + {size.fluid.sp900.r})",
+          "type": "sizing"
+        },
+        "clamp": {
+          "value": "min( max( {size.fluid.sp900.min},  {size.fluid.sp900.fluid}) ,{size.fluid.sp900.max})",
+          "type": "sizing"
+        }
+      }
     }
   },
   "opacity": {
