@@ -21,10 +21,6 @@
     "media/@1264px",
     "media/@1904px",
     "theme/light",
-    "theme/dark",
-    "clamped",
-    "color",
-    "dimension",
-    "font"
+    "theme/dark"
   ]
 }
