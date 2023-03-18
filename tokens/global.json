@@ -3161,11 +3161,11 @@
     },
     "f-4": {
       "min": {
-        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(0/{font-scale.const.min.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-4/{font-scale.const.min.n})/5),1)",
         "type": "fontSizes"
       },
       "max": {
-        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(0/{font-scale.const.max.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(-4/{font-scale.const.max.n})/5),1)",
         "type": "fontSizes"
       },
       "v": {
@@ -3183,11 +3183,11 @@
     },
     "f-3": {
       "min": {
-        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(0/{font-scale.const.min.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-3/{font-scale.const.min.n})/5),1)",
         "type": "fontSizes"
       },
       "max": {
-        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(0/{font-scale.const.max.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(-3/{font-scale.const.max.n})/5),1)",
         "type": "fontSizes"
       },
       "v": {
@@ -3205,11 +3205,11 @@
     },
     "f-2": {
       "min": {
-        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(0/{font-scale.const.min.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-2/{font-scale.const.min.n})/5),1)",
         "type": "fontSizes"
       },
       "max": {
-        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(0/{font-scale.const.max.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(-2/{font-scale.const.max.n})/5),1)",
         "type": "fontSizes"
       },
       "v": {
@@ -3227,11 +3227,11 @@
     },
     "f-1": {
       "min": {
-        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(0/{font-scale.const.min.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.min.f0}*{font-scale.const.min.r}^(-1/{font-scale.const.min.n})/5),1)",
         "type": "fontSizes"
       },
       "max": {
-        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(0/{font-scale.const.max.n})/5),1)",
+        "value": "5*roundTo(({font-scale.const.max.f0}*{font-scale.const.max.r}^(-1/{font-scale.const.max.n})/5),1)",
         "type": "fontSizes"
       },
       "v": {
