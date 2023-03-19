@@ -21,20 +21,20 @@ function updateGraph() {
     renderChart(typescales, minBreakpoint, maxBreakpoint, offsetGraph);
     renderTable(typescales);
     renderVisualTypescale(typescales);
+    generateDesignTokens(typescales, minBreakpoint, minF0, minR, minN, maxBreakpoint, maxF0, maxR, maxN);
+
     const designTokens = generateDesignTokens(typescales, minBreakpoint, minF0, minR, minN, maxBreakpoint, maxF0, maxR, maxN);
 
-    downloadJSON(designTokens, "design-tokens.json");
 
     const downloadButton = document.getElementById("downloadButton");
     downloadButton.addEventListener("click", () => {
         downloadJSON(designTokens, "design-tokens.json");
     });
 
+
 }
 
 updateGraph(); // Render the graph on initial load
-
-
 
 function generateTypescales(minBreakpoint, minF0, minR, minN, maxBreakpoint, maxF0, maxR, maxN, stepsDown, stepsUp, offsetGraph) {
 
