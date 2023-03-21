@@ -1,7 +1,11 @@
 const inputs = document.querySelectorAll("input");
+const selects = document.querySelectorAll("select");
 
 inputs.forEach((input) => {
     input.addEventListener("input", updateGraph);
+});
+selects.forEach((select) => {
+    select.addEventListener("select", updateGraph);
 });
 
 function updateGraph() {
@@ -15,9 +19,10 @@ function updateGraph() {
     const maxN = parseFloat(document.getElementById("maxN").value);
     const stepsDown = parseFloat(document.getElementById("stepsDown").value);
     const stepsUp = parseFloat(document.getElementById("stepsUp").value);
+    const stepWidth = parseFloat(document.getElementById("stepWidth").value);
     const offsetGraph = 160;
 
-    const typescales = generateTypescales(minBreakpoint, minF0, minR, minN, maxBreakpoint, maxF0, maxR, maxN, stepsDown, stepsUp, offsetGraph);
+    const typescales = generateTypescales(minBreakpoint, minF0, minR, minN, maxBreakpoint, maxF0, maxR, maxN, stepsDown, stepsUp, stepWidth, offsetGraph);
     renderChart(typescales, minBreakpoint, maxBreakpoint, offsetGraph);
     renderTable(typescales);
     renderVisualTypescale(typescales);
@@ -27,6 +32,7 @@ function updateGraph() {
 
 
     const downloadButton = document.getElementById("downloadButton");
+
     downloadButton.addEventListener("click", () => {
         downloadJSON(designTokens, "design-tokens.json");
     });
@@ -36,15 +42,15 @@ function updateGraph() {
 
 updateGraph(); // Render the graph on initial load
 
-function generateTypescales(minBreakpoint, minF0, minR, minN, maxBreakpoint, maxF0, maxR, maxN, stepsDown, stepsUp, offsetGraph) {
+function generateTypescales(minBreakpoint, minF0, minR, minN, maxBreakpoint, maxF0, maxR, maxN, stepsDown, stepsUp, stepWidth, offsetGraph) {
 
     const typescales = [];
 
     for (let i = -stepsDown; i <= stepsUp; i++) {
         const scale = [];
         const step = "f" + i;
-        const minFontSize = Math.round(2 * (minF0 * Math.pow(minR, i / minN ))) /2;
-        const maxFontSize = Math.round(2 * (maxF0 * Math.pow(maxR, i / maxN ))) /2;
+        const minFontSize = Math.round(stepWidth * (minF0 * Math.pow(minR, i / minN ))) / stepWidth;
+        const maxFontSize = Math.round(stepWidth * (maxF0 * Math.pow(maxR, i / maxN ))) / stepWidth;
         scale.push({ breakpoint: minBreakpoint-offsetGraph, fontSize: minFontSize, step: step });
         scale.push({ breakpoint: minBreakpoint, fontSize: minFontSize, step: step });
         scale.push({ breakpoint: maxBreakpoint, fontSize: maxFontSize, step: step });
