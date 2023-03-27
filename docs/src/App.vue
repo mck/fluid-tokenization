@@ -44,6 +44,12 @@ const tabs = ref([
     label: 'Tokens',
     icon: 'pi pi-fw pi-database',
     to: '/tokens'
+  },
+  {
+    label: 'Download Tokens',
+    icon: 'pi pi-fw pi-download',
+    class: 'align-self-end',
+    to: '/tokens'
   }
 ]);
 
