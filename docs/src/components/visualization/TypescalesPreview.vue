@@ -16,7 +16,7 @@ const typescales = useTypescalesStore();
 			<tr v-for="scale in typescales.typescales" class="align-bottom" :class="scale[0].step">
 				<td>{{ scale[0].step }}</td>
 				<td v-for="item in scale.slice(1, -1)"
-            :style="[{ 'line-height': '1em' }, { 'font-size': item.cssValue.toFixed(2) + 'px' }]">Aa <span class="font-size-info">({{ item.cssValue.toFixed(0) }}px)</span></td>
+            :style="[{ 'line-height': '1em' }, { 'font-size': item.cssValue.toFixed(2) + 'px' }]">Aa <span class="font-size-info">({{ item.cssValue }}px)</span></td>
 			</tr>
 		</tbody>
 	</table>
