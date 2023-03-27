@@ -1,5 +1,5 @@
 <script setup>
-import {computed, onMounted} from 'vue'
+  import { computed } from 'vue'
   import { useTypescalesStore } from '../stores/typescales'
   import { PrismEditor } from 'vue-prism-editor'
   import 'vue-prism-editor/dist/prismeditor.min.css'
@@ -7,6 +7,7 @@ import {computed, onMounted} from 'vue'
   import 'prismjs/components/prism-clike'
   import 'prismjs/components/prism-javascript'
   import 'prismjs/themes/prism-tomorrow.css'
+  import Button from 'primevue/button'
 
   const typescales = useTypescalesStore()
   const code = computed(() => JSON.stringify(typescales.designTokens, null, 2))
@@ -15,32 +16,31 @@ import {computed, onMounted} from 'vue'
     return highlight(code, languages.js) // languages.<insert language> to return html with markup
   }
 
-  onMounted(() => {
-    if (typeof Prism === 'undefined' || typeof document === 'undefined' || !document.querySelector) {
-      return;
-    }
-
-    Prism.plugins.toolbar.registerButton('download-file', function (env) {
-      var pre = env.element.parentNode;
-      if (!pre || !/pre/i.test(pre.nodeName) || !pre.hasAttribute('data-src') || !pre.hasAttribute('data-download-link')) {
-        return;
-      }
-      var src = pre.getAttribute('data-src');
-      var a = document.createElement('a');
-      a.textContent = pre.getAttribute('data-download-link-label') || 'Download';
-      a.setAttribute('download', '');
-      a.href = src;
-      return a;
-    });
-  })
+  function downloadTokens() {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(code.value);
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", "design-tokens.json");
+    downloadAnchorNode.click();
+  }
 </script>
 
 <template>
-  <prism-editor class="my-editor" v-model="code" :highlight="highlighter" line-numbers></prism-editor>
+  <div class="relative">
+    <Button label="Download" class="download" @click="downloadTokens"/>
+    <prism-editor class="my-editor" v-model="code" :highlight="highlighter" line-numbers></prism-editor>
+  </div>
 </template>
 
 
-<style>
+<style scoped>
+  .download {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
   /* required class */
   .my-editor {
     /* we dont use `language-` classes anymore so thats why we need to add background and text color manually */

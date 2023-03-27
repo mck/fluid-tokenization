@@ -1,23 +1,10 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import TabMenu from 'primevue/tabmenu';
-import TypescalesChart from './components/visualization/TypescalesChart.vue';
-import TypescalesForm from './components/form/TypescalesForm.vue'
-import TypescalesPreview from './components/visualization/TypescalesPreview.vue';
-import TypescalesTable from './components/visualization/TypescalesTable.vue';
-import { useTypescalesStore } from './stores/typescales';
+  import {ref} from 'vue'
+  import TabMenu from 'primevue/tabmenu'
+  import TypescalesForm from './components/form/TypescalesForm.vue'
+  import {useTypescalesStore} from './stores/typescales'
 
-const typescales = useTypescalesStore();
-
-const downloadJSON = () => {
-  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(typescales.designTokens, null, 2));
-    const downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", "design-tokens.json");
-    document.body.appendChild(downloadAnchorNode);
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
-}
+  const typescales = useTypescalesStore();
 
 const tabs = ref([
   {
@@ -43,12 +30,6 @@ const tabs = ref([
   {
     label: 'Tokens',
     icon: 'pi pi-fw pi-database',
-    to: '/tokens'
-  },
-  {
-    label: 'Download Tokens',
-    icon: 'pi pi-fw pi-download',
-    class: 'align-self-end',
     to: '/tokens'
   }
 ]);
