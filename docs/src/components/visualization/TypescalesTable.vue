@@ -26,7 +26,7 @@ const typescales = computed(() => {
   <DataTable :value="typescales">
     <Column field="step" header="Step" />
     <Column field="min" :header="typescaleStore.minBreakpoint + 'px'" />
-    <Column field="fluid" :header="typescaleStore.screenWidth + 'px (fluid)'" />
+    <Column field="fluid" :header="typescaleStore.screenWidth + 'px / fluid'" />
     <Column field="max" :header="typescaleStore.maxBreakpoint + 'px'" />
   </DataTable>
 </template>
