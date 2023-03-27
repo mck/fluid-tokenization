@@ -13,7 +13,9 @@
     "pinia": "2.0.33",
     "primeicons": "^6.0.1",
     "primevue": "^3.26.0",
-    "vue": "3.2.47"
+    "prismjs": "^1.29.0",
+    "vue": "3.2.47",
+    "vue-prism-editor": "^2.0.0-alpha.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "4.1.0",
