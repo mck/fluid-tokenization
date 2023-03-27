@@ -21,6 +21,12 @@ const props = defineProps<{
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td>f0</td>
+          <td>1rem</td>
+          <td>clamp(1rem, calc(0.5vw + 0.92rem), 1.125rem)</td>
+          <td>1.125rem</td>
+        </tr>
         <tr v-for="(scale, i) in typescales" :key="i">
           <td>{{ scale[0].step }}</td>
 

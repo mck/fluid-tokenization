@@ -41,6 +41,11 @@ const tabs = ref([
     to: '/scale'
   },
   {
+    label: 'Sample',
+    icon: 'pi pi-fw pi-clone',
+    to: '/sample'
+  },
+  {
     label: 'Tokens',
     icon: 'pi pi-fw pi-database',
     to: '/tokens'
