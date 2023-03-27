@@ -7,8 +7,8 @@ import Dropdown from 'primevue/dropdown';
 import { ref } from "vue";
 
 const stepWidths = ref([
-  { name: 'Half Steps', code: '0.5' },
-  { name: 'Full Steps', code: '1' }
+  { name: 'Half Steps', code: 2 },
+  { name: 'Full Steps', code: 1 }
 ]);
 
 const typescales = useTypescalesStore();
@@ -54,58 +54,66 @@ const typescales = useTypescalesStore();
         </span>
       </div>
       <div class="field col-12 md:col-3">
-      <span class="p-float-label">
-        <InputText id="maxF0" v-model.number="typescales.maxF0" class="w-full"/>
-        <Slider v-model="typescales.maxF0" :step="1" :min="8" :max="64"/>
-        <label for="maxBreakpoint">max f0</label>
-      </span>
+        <span class="p-float-label">
+          <InputText id="maxF0" v-model.number="typescales.maxF0" class="w-full"/>
+          <Slider v-model="typescales.maxF0" :step="1" :min="8" :max="64"/>
+          <label for="maxBreakpoint">max f0</label>
+        </span>
       </div>
       <div class="field col-12 md:col-3">
-      <span class="p-float-label">
-        <InputText id="maxR" v-model.number="typescales.maxR" class="w-full"/>
-        <Slider v-model="typescales.maxR" :step="0.1" :min="1" :max="5"/>
-        <label for="maxR">max r</label>
-      </span>
+        <span class="p-float-label">
+          <InputText id="maxR" v-model.number="typescales.maxR" class="w-full"/>
+          <Slider v-model="typescales.maxR" :step="0.1" :min="1" :max="5"/>
+          <label for="maxR">max r</label>
+        </span>
       </div>
       <div class="field col-12 md:col-3">
-      <span class="p-float-label">
-        <InputText id="maxF0" v-model.number="typescales.maxN" class="w-full"/>
-        <Slider v-model="typescales.maxN" :step="1" :min="1" :max="32"/>
-        <label for="maxBreakpoint">max N</label>
-      </span>
+        <span class="p-float-label">
+          <InputText id="maxF0" v-model.number="typescales.maxN" class="w-full"/>
+          <Slider v-model="typescales.maxN" :step="1" :min="1" :max="32"/>
+          <label for="maxBreakpoint">max N</label>
+        </span>
       </div>
     </div>
 
 
     <div class="grid mb-5">
       <div class="field col-12 md:col-3">
-      <span class="p-float-label">
-        <InputText id="rem" v-model.number="typescales.rem" class="w-full"/>
-        <Slider v-model="typescales.rem" :step="1" :min="8" :max="64"/>
-        <label for="rem">Rem</label>
-      </span>
+        <span class="p-float-label">
+          <InputText id="rem" v-model.number="typescales.rem" class="w-full"/>
+          <Slider v-model="typescales.rem" :step="1" :min="8" :max="64"/>
+          <label for="rem">Rem</label>
+        </span>
       </div>
       <div class="field col-12 md:col-3">
-      <span class="p-float-label">
-        <InputText id="stepsDown" v-model.number="typescales.stepsDown" class="w-full"/>
-        <Slider v-model="typescales.stepsDown" :step="1" :min="0" :max="8"/>
-        <label for="stepsDown">Steps Down</label>
-      </span>
+        <span class="p-float-label">
+          <InputText id="stepsDown" v-model.number="typescales.stepsDown" class="w-full"/>
+          <Slider v-model="typescales.stepsDown" :step="1" :min="0" :max="8"/>
+          <label for="stepsDown">Steps Down</label>
+        </span>
       </div>
       <div class="field col-12 md:col-3">
-      <span class="p-float-label">
-        <InputText id="stepsUp" v-model.number="typescales.stepsUp" class="w-full"/>
-        <Slider v-model="typescales.stepsUp" :step="1" :min="1" :max="32"/>
-        <label for="stepsUp">Steps Up</label>
-      </span>
+        <span class="p-float-label">
+          <InputText id="stepsUp" v-model.number="typescales.stepsUp" class="w-full"/>
+          <Slider v-model="typescales.stepsUp" :step="1" :min="1" :max="32"/>
+          <label for="stepsUp">Steps Up</label>
+        </span>
       </div>
       <div class="field col-12 md:col-3">
-        <label class="form-label">Step Width:
-          <select v-model.number="typescales.stepWidth" id="stepWidth" class="form-control">
-            <option value="1">Full Steps</option>
-            <option value="2">Half Steps</option>
-          </select>
-        </label>
+        <span class="p-float-label">
+          <Dropdown v-model.number="typescales.stepWidth" :options="stepWidths" optionLabel="name" optionValue="code" class="w-full"/>
+          <label for="stepWidth">Step Width</label>
+        </span>
+      </div>
+    </div>
+
+    <div class="grid mb-5">
+      <div class="field col-12 md:col-3">
+        <span class="p-float-label">
+          <InputText id="screenWidth" v-model.number="typescales.screenWidth" class="w-full"/>
+          <Slider v-model="typescales.screenWidth" :step="1" :min="360" :max="1920"/>
+          <label for="screenWidth">Steps Up</label>
+        </span>
       </div>
     </div>
 
