@@ -1,0 +1,16 @@
+{
+  "viewport": {
+    "width": {
+      "value": "1904",
+      "type": "sizing"
+    }
+  },
+  "semantic": {
+    "space-around": {
+      "container": {
+        "value": "{space.3200}",
+        "type": "spacing"
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "section": {
+    "hero": {
+      "container-overlay": {
+        "value": "{semantic.color.bg.overlay}",
+        "type": "color",
+        "description": "The section container has a separate background and overlay. You could use the overlay to add a gradient or opacity layer on top of your background color or image fill."
+      },
+      "container-bg-image": {
+        "value": "https://images.unsplash.com/photo-1517429391578-8a2fd2679a30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80",
+        "type": "asset",
+        "description": "Add an image address pointing to a public url\n\n"
+      },
+      "padding-y": {
+        "value": "{semantic.space-around.section.xl}",
+        "type": "spacing"
+      },
+      "padding-x": {
+        "value": "{semantic.space-around.section.xs}",
+        "type": "spacing"
+      },
+      "image": {
+        "border-radii": {
+          "value": "{semantic.ui.border-radius} {semantic.ui.border-radius} {semantic.ui.border-radius} {semantic.ui.border-radius}",
+          "type": "borderRadius"
+        }
+      },
+      "headline-color": {
+        "value": "{semantic.color.fg.default}",
+        "type": "color"
+      },
+      "body-color": {
+        "value": "{semantic.color.fg.subtle}",
+        "type": "color"
+      },
+      "body-space-between": {
+        "value": "{semantic.space-between.section.md}",
+        "type": "spacing"
+      },
+      "content-space-between": {
+        "value": "{semantic.space-between.section.xs}",
+        "type": "spacing"
+      },
+      "actions-space-between": {
+        "value": "{semantic.space-between.section.xxs}",
+        "type": "spacing"
+      },
+      "opacity": {
+        "image": {
+          "value": "{opacity.100}",
+          "type": "opacity"
+        }
+      }
+    }
+  }
+}
