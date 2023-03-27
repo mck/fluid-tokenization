@@ -14,9 +14,7 @@ const downloadJSON = () => {
   const downloadAnchorNode = document.createElement('a');
   downloadAnchorNode.setAttribute("href", dataStr);
   downloadAnchorNode.setAttribute("download", "design-tokens.json");
-  document.body.appendChild(downloadAnchorNode);
   downloadAnchorNode.click();
-  downloadAnchorNode.remove();
 }
 
 const tabs = ref([
@@ -50,18 +48,9 @@ const tabs = ref([
 </script>
 
 <template>
-      <div class="tab-pane fade" id="scale-tab-pane" role="tabpanel" aria-labelledby="scale-tab" tabindex="0">
-        <TypescalesPreview />
-      </div>
-      <div class="tab-pane fade" id="example-tab-pane" role="tabpanel" aria-labelledby="example-tab" tabindex="0">
-        example
-      </div>
-      <div class="tab-pane fade" id="json-tab-pane" role="tabpanel" aria-labelledby="json-tab" tabindex="0">
-        <div class="py-3">
-          <button class="btn btn-primary" @click="downloadJSON()">Download JSON</button>
-        </div>
-        <pre>{{ JSON.stringify(typescales.designTokens['font-scale'], null, 2) }}</pre>
-      </div>
+  <div class="mt-3">
+    <TypescalesPreview />
+  </div>
 </template>
 
 <style scoped>

@@ -19,7 +19,7 @@
 
 <template>
   <div class="container" :style="exampleContainerStyles">
-    <h1>Welcome to the Fun Typographic Hierarchy!</h1>
+    <h1 class="mt-0">Welcome to the Fun Typographic Hierarchy!</h1>
     <h2>Explore Different Levels of Fun</h2>
     <h3>Level 1: The Magic of Colors</h3>
     <p>Let's embark on a journey through the captivating world of colors, where every hue has its own story to tell and mood to express. From vibrant reds to calming blues, colors have the power to evoke emotions and transform any design.</p>
@@ -66,7 +66,8 @@
   margin: 3rem auto;
   padding: 1.5rem;
   max-width: 100%;
-  font-size: var(--typescale-f0)
+  font-size: var(--typescale-f0);
+  box-shadow: hsl(266, 100%, 64%) 0 0 2rem;
 }
 
 @for $i from 1 through 6 {
