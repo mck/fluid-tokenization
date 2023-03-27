@@ -1,9 +1,21 @@
 <script setup lang="ts">
+  import {useTypescalesStore} from '../../stores/typescales'
+  import {computed} from 'vue'
+  import {generateTypescaleSteps} from '../../lib/generateTypescaleSteps'
 
+  const typescaleStore = useTypescalesStore()
+
+  const exampleTypescales = computed<StepSettings[][]>(() => generateTypescaleSteps(2, 6))
+  const exampleContainerStyles = computed(() => exampleTypescales.value.reduce<Record<string, string>>((output, scale) => {
+    const step = scale[0].step
+    const size = scale[2].cssValue
+    output[`--typescale-${step}`] = size.toFixed(2) + 'px'
+    return output
+  }, {}))
 </script>
 
 <template>
-  <div class="container" style="width: 820px;">
+  <div class="container" style="width: 820px;" :style="exampleContainerStyles">
     <h1>Welcome to the Fun Typographic Hierarchy!</h1>
     <h2>Explore Different Levels of Fun</h2>
     <h3>Level 1: The Magic of Colors</h3>
@@ -46,10 +58,21 @@
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   margin: 3rem auto;
   padding: 1.5rem;
   max-width: 1920px; //TODO: add maxBreakpoint
+  font-size: var(--typescale-f0)
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: var(--typescale-f#{7-$i})
+  }
+}
+
+figcaption {
+  font-size: var(--typescale-f-2)
 }
 </style>

@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import {calculateMaxFontSize} from '../lib/calculateMaxFontSize'
 import {calculateMinFontSize} from '../lib/calculateMinFontSize'
 import {calculateFluidFontSize} from '../lib/calculateFluidFontSize'
+import {generateTypescaleSteps} from '../lib/generateTypescaleSteps'
 
 export const useTypescalesStore = defineStore('typescales', {
   state: () => ({
@@ -22,23 +23,7 @@ export const useTypescalesStore = defineStore('typescales', {
   }),
   getters: {
     typescales: (state) => {
-      const typescales: StepSettings[][] = [];
-
-      for (let i = -state.stepsDown; i <= state.stepsUp; i++) {
-        const scale: StepSettings[] = [];
-        const step = "f" + i;
-        const minFontSize = calculateMinFontSize(i);
-        const maxFontSize = calculateMaxFontSize(i);
-        const { clamped: fluidFontSize } = calculateFluidFontSize(minFontSize, maxFontSize, state.screenWidth)
-
-        scale.push({ breakpoint: state.minBreakpoint - state.offsetGraph, cssValue: minFontSize, step });
-        scale.push({ breakpoint: state.minBreakpoint, cssValue: minFontSize, step });
-        scale.push({ breakpoint: state.screenWidth, cssValue: fluidFontSize, step });
-        scale.push({ breakpoint: state.maxBreakpoint, cssValue: maxFontSize, step });
-        scale.push({ breakpoint: state.maxBreakpoint + state.offsetGraph, cssValue: maxFontSize, step });
-        typescales.push(scale);
-      }
-      return typescales;
+      return generateTypescaleSteps(state.stepsDown, state.stepsUp)
     },
     designTokens(state) {
       interface DesignTokensFontScaleConst {
