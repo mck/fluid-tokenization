@@ -33,7 +33,7 @@ export const useTypescalesStore = defineStore('typescales', {
 
         scale.push({ breakpoint: state.minBreakpoint - state.offsetGraph, cssValue: minFontSize, step });
         scale.push({ breakpoint: state.minBreakpoint, cssValue: minFontSize, step });
-        scale.push({ breakpoint: 'fluid', cssValue: fluidFontSize, step });
+        scale.push({ breakpoint: state.screenWidth, cssValue: fluidFontSize, step });
         scale.push({ breakpoint: state.maxBreakpoint, cssValue: maxFontSize, step });
         scale.push({ breakpoint: state.maxBreakpoint + state.offsetGraph, cssValue: maxFontSize, step });
         typescales.push(scale);

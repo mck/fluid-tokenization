@@ -112,7 +112,7 @@ const typescales = useTypescalesStore();
         <span class="p-float-label">
           <InputText id="screenWidth" v-model.number="typescales.screenWidth" class="w-full"/>
           <Slider v-model="typescales.screenWidth" :step="1" :min="360" :max="1920"/>
-          <label for="screenWidth">Steps Up</label>
+          <label for="screenWidth">Screen Width</label>
         </span>
       </div>
     </div>

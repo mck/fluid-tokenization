@@ -20,6 +20,9 @@ onBeforeUnmount(() => {
 })
 
 const renderChart = () => {
+  console.log(typescales.typescales[0].map((item) => item.breakpoint))
+  console.log(typescales.typescales.map(scale => scale.map(item => item.cssValue)))
+
   if (!canvas.value) return;
   chartInstance?.destroy();
   chartInstance = new Chart(canvas.value, {
@@ -66,6 +69,12 @@ const renderChart = () => {
       interaction: {
         // mode: 'hover', TODO check which property is desired, 'hover' does not exist
         intersect: true,
+      },
+      elements: {
+        point: {
+          radius: 5,
+          hitRadius: 5
+        }
       },
       plugins: {
         tooltip: {
