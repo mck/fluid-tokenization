@@ -25,11 +25,6 @@ const router = createRouter({
             component: () => Table
         },
         {
-            path: "/scale",
-            name: "scale",
-            component: () => Scale
-        },
-        {
             path: "/sample",
             name: "sample",
             component: () => Sample
