@@ -11,7 +11,7 @@ export const useTypescalesStore = defineStore('typescales', {
   state: () => ({
     minBreakpoint: 360,
     minF0: 16,
-    minR: 2,
+    minR: 2.0,
     minN: 5,
     maxBreakpoint: 1920,
     maxF0: 18,
