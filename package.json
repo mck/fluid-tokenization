@@ -11,9 +11,15 @@
   },
   "homepage": "https://github.com/mck/fluid-tokenization#readme",
   "dependencies": {
-    "@tokens-studio/sd-transforms": "^0.4.5"
+    "@tokens-studio/sd-transforms": "^0.4.5",
+    "primeflex": "^3.3.0",
+    "vue-router": "^4.1.6"
   },
   "scripts": {
     "build": "node build-tokens"
+  },
+  "devDependencies": {
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.1"
   }
 }

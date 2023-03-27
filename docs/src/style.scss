@@ -1,0 +1,11 @@
+// @import 'primeflex/primeflex.scss';
+// @import 'primeflex/themes/arya-blue.scss';
+
+body {
+  font-family: var(--font-family);
+}
+
+canvas {
+  width: 100%;
+  height: 400px;
+}

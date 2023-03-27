@@ -13,6 +13,7 @@ export const useTypescalesStore = defineStore('typescales', {
     stepsDown: 3,
     stepsUp: 10,
     stepWidth: 1 as 1 | 2,
+    rem: 16,
     offsetGraph: 160
   }),
   getters: {
@@ -24,8 +25,12 @@ export const useTypescalesStore = defineStore('typescales', {
         const step = "f" + i;
         const minFontSize = Math.round(state.stepWidth * (state.minF0 * Math.pow(state.minR, i / state.minN))) / state.stepWidth;
         const maxFontSize = Math.round(state.stepWidth * (state.maxF0 * Math.pow(state.maxR, i / state.maxN))) / state.stepWidth;
+        const fontV = (100 * (maxFontSize-minFontSize) / (state.maxBreakpoint-state.minBreakpoint)).toFixed(2);
+        const fontR = ((( state.minBreakpoint * maxFontSize - state.maxBreakpoint * minFontSize) / (state.minBreakpoint-state.maxBreakpoint))/state.rem).toFixed(2);
+        const fluidFontSize = fontV + 'vw' + ' + ' + fontR;
         scale.push({ breakpoint: state.minBreakpoint - state.offsetGraph, fontSize: minFontSize, step });
         scale.push({ breakpoint: state.minBreakpoint, fontSize: minFontSize, step });
+        scale.push({ breakpoint: 'fluid', fontSize: fluidFontSize, step });
         scale.push({ breakpoint: state.maxBreakpoint, fontSize: maxFontSize, step });
         scale.push({ breakpoint: state.maxBreakpoint + state.offsetGraph, fontSize: maxFontSize, step });
         typescales.push(scale);

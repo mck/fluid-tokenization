@@ -30,6 +30,7 @@ const renderChart = () => {
         label: scale[0].step,
         data: scale.map((item) => item.fontSize),
         borderColor: `hsl(266, 100%, 64%)`,
+        borderWidth: 1,
         tension: 0,
         fill: false,
       })),
@@ -47,12 +48,18 @@ const renderChart = () => {
             display: true,
             text: "Breakpoints in px",
           },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.1)'
+          },
         },
         y: {
           type: 'linear',
           title: {
             display: true,
             text: "Font Size in px",
+          },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.1)'
           },
         },
       },
@@ -66,7 +73,7 @@ const renderChart = () => {
           backgroundColor: 'rgba(0, 0, 0, 0.8)',
           titleColor: '#fff',
           bodyColor: '#fff',
-          borderColor: '#ddd',
+          borderColor: '#fff',
           borderWidth: 1,
           displayColors: false,
           callbacks: {
