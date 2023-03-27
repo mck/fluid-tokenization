@@ -56,12 +56,14 @@ const tabs = ref([
 
 <template>
   <main>
-    <div class="mb-5">
-      <h1>Fluid Typescale Generator & Design Token Integration</h1>
-      <p>A practical web tool designed to streamline the process of creating fluid typescales, generating design tokens, and seamlessly integrating them into Figma using Tokens Studio for an efficient and consistent design workflow.</p>
+    <div class="p-5">
+      <h1 class="text-color-secondary">Fluid Typescale Generator & Design Token Integration</h1>
+      <p class="text-color-secondary mb-7">A practical web tool designed to streamline the process of creating fluid typescales, generating design tokens, and seamlessly integrating them into Figma using Tokens Studio for an efficient and consistent design workflow.</p>
+
+
+      <TypescalesForm @typescales="typescales = $event"/>
     </div>
 
-    <TypescalesForm @typescales="typescales = $event"/>
     <TabMenu :model="tabs" />
     <router-view />
   </main>

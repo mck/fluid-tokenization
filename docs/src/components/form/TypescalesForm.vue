@@ -108,7 +108,7 @@ const typescales = useTypescalesStore();
     </div>
 
     <div class="grid mb-5">
-      <div class="field col-12 md:col-3">
+      <div class="field col-12">
         <span class="p-float-label">
           <InputText id="screenWidth" v-model.number="typescales.screenWidth" class="w-full"/>
           <Slider v-model="typescales.screenWidth" :step="1" :min="typescales.minBreakpoint" :max="typescales.maxBreakpoint"/>
