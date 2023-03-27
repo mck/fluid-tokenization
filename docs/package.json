@@ -13,10 +13,12 @@
     "chart.js": "4.2.1",
     "pinia": "2.0.33",
     "primeicons": "^6.0.1",
+    "primeflex": "^3.3.0",
     "primevue": "^3.26.0",
     "prismjs": "^1.29.0",
     "vue": "3.2.47",
-    "vue-prism-editor": "^2.0.0-alpha.2"
+    "vue-prism-editor": "^2.0.0-alpha.2",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "4.1.0",
