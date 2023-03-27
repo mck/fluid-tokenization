@@ -1,8 +1,20 @@
 <script setup lang="ts">
-  import {computed} from 'vue'
+  import {computed, ref} from 'vue'
   import {generateTypescaleSteps} from '../../lib/generateTypescaleSteps'
   import {StepSettings, useTypescalesStore} from '../../stores/typescales'
+  import FontFamilySelect from '../form/FontFamilySelect.vue'
+  import {FontFamilies} from '../../../types/FontFamilies'
 
+  const selectedFonts = ref<FontFamilies>({
+    heading: {
+      family: 'Helvetica',
+      weight: 800
+    },
+    body: {
+      family: 'Helvetica',
+      weight: 400
+    }
+  })
   const typescaleStore = useTypescalesStore()
   const exampleTypescales = computed<StepSettings[][]>(() => generateTypescaleSteps(2, 6))
   const exampleTypescaleVariables = computed(() => exampleTypescales.value.reduce<Record<string, string>>((output, scale) => {
@@ -13,11 +25,16 @@
   }, {}))
   const exampleContainerStyles = computed(() => ({
     ...exampleTypescaleVariables.value,
-    width: typescaleStore.screenWidth.toFixed(2) + 'px'
+    width: typescaleStore.screenWidth.toFixed(2) + 'px',
+    '--heading-font-family': selectedFonts.value.heading.family,
+    '--heading-font-weight': selectedFonts.value.heading.weight,
+    '--body-font-family': selectedFonts.value.body.family,
+    '--body-font-weight': selectedFonts.value.body.weight,
   }))
 </script>
 
 <template>
+  <FontFamilySelect v-model="selectedFonts"/>
   <div class="container" :style="exampleContainerStyles">
     <h1 class="mt-0">Welcome to the Fun Typographic Hierarchy!</h1>
     <h2>Explore Different Levels of Fun</h2>
@@ -68,11 +85,15 @@
   max-width: 100%;
   font-size: var(--typescale-f0);
   box-shadow: hsl(266, 100%, 64%) 0 0 2rem;
+  font-family: var(--body-font-family), Arial, sans-serif;
+  font-weight: var(--body-font-weight, normal);
 }
 
 @for $i from 1 through 6 {
   h#{$i} {
-    font-size: var(--typescale-f#{7-$i})
+    font-size: var(--typescale-f#{7-$i});
+    font-family: var(--heading-font-family), Arial, sans-serif;
+    font-weight: var(--heading-font-weight, bold);
   }
 }
 

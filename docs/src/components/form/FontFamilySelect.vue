@@ -1,41 +1,56 @@
 <template>
-  <span class="p-float-label">
-    <InputText id="fontFamily" class="w-full" :value="fontFamily" @blur="loadFontFamily"/>
-    <label for="fontFamily">Font Family</label>
-  </span>
-  <Button @click="loadFontFamily" label="Schriftart laden"/>
+  <div class="grid my-5">
+    <div class="field col-12 md:col-3">
+      <span class="p-float-label">
+        <InputText id="fontFamilyHeading" class="w-full" v-model="model.heading.family"/>
+        <label for="fontFamilyHeading">Headings Font Family</label>
+      </span>
+    </div>
+    <div class="field col-12 md:col-3">
+      <span class="p-float-label">
+        <Dropdown id="fontWeightHeading" v-model.number="model.heading.weight" :options="fontWeights" class="w-full"/>
+        <label for="fontWeightHeading">Headings Font Weight</label>
+      </span>
+    </div>
+    <div class="field col-12 md:col-3">
+      <span class="p-float-label">
+        <InputText id="fontFamilyBody" class="w-full" v-model="model.body.family"/>
+        <label for="fontFamilyBody">Body Font Family</label>
+      </span>
+    </div>
+    <div class="field col-12 md:col-3">
+      <span class="p-float-label">
+        <Dropdown id="fontWeightBody" v-model.number="model.body.weight" :options="fontWeights" class="w-full"/>
+        <label for="fontWeightBody">Body Font Weight</label>
+      </span>
+    </div>
+  </div>
 </template>
 
-<script lang="ts">
-  const loadedFontFamilies: string[] = []
-</script>
-
 <script lang="ts" setup>
-  import {computed, ref} from 'vue'
+  import {computed} from 'vue'
+  import {FontFamilies} from '../../../types/FontFamilies'
+  import InputText from 'primevue/inputtext'
+  import Dropdown from 'primevue/dropdown'
 
   const props = defineProps<{
-    modelValue: string
+    modelValue: FontFamilies
   }>()
 
   const emit = defineEmits<{
-    (event: 'update:modelValue', payload: string): unknown
+    (event: 'update:modelValue', payload: FontFamilies): unknown
   }>()
 
-  /*const model = computed({
+  const model = computed({
     get: () => props.modelValue,
     set: value => emit('update:modelValue', value)
-  })*/
-  const fontFamily = ref('')
-  const normalizedFontFamily = computed(() => fontFamily.value.split(' ').map(part => part.toLowerCase()).join('+'))
-  const fontFamilyUrl = computed(() => `https://fonts.googleapis.com/css2?family=${normalizedFontFamily.value}:ital,wght@0,400;0,700;1,400;1,700&display=swap`)
+  })
 
-  function loadFontFamily() {
-    if(loadedFontFamilies.includes(normalizedFontFamily.value)) {
-      return
+  const fontWeights = computed(() => {
+    const output: number[] = []
+    for (let i = 100; i <= 900; i += 100) {
+      output.push(i)
     }
-    loadedFontFamilies.push(normalizedFontFamily.value)
-    const link = document.createElement('link')
-    link.rel = 'stylesheet'
-
-  }
+    return output
+  })
 </script>

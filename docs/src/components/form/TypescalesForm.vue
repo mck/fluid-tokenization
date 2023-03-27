@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {useTypescalesStore} from '../../stores/typescales';
 import InputNumber from 'primevue/inputnumber';
-import InputText from 'primevue/inputtext';
 import Slider from 'primevue/slider';
 import Dropdown from 'primevue/dropdown';
 import { ref } from "vue";
