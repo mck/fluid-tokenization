@@ -2,6 +2,7 @@ $gold: #D3C7AD;
 
 body {
   font-family: var(--font-family);
+  line-height: 1.5em;
 }
 
 canvas {
@@ -11,4 +12,9 @@ canvas {
 
 .f0 {
   color: $gold;
+}
+
+.font-size {
+  font-size: 0.875rem;
+  color: var(--font-color-secondary);
 }
