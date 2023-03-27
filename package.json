@@ -15,9 +15,5 @@
   },
   "scripts": {
     "build": "node build-tokens"
-  },
-  "devDependencies": {
-    "sass": "^1.60.0",
-    "sass-loader": "^13.2.1"
   }
 }
