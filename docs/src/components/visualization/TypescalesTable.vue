@@ -24,7 +24,7 @@ const props = defineProps<{
         <tr v-for="(scale, i) in typescales" :key="i">
           <td>{{ scale[0].step }}</td>
 
-          <td v-for="(item, index) in scale.slice(1, -1)" :key="index" class="text-right">{{ item.fontSize }}px</td>
+          <td v-for="(item, index) in scale.slice(1, -1)" :key="index" class="text-right">{{ item.cssValue }}px</td>
 
         </tr>
       </tbody>

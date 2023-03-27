@@ -13,7 +13,7 @@ onMounted(() => {
   })
 })
 
-let chartInstance: Chart; 
+let chartInstance: Chart;
 
 onBeforeUnmount(() => {
   chartInstance?.destroy();
@@ -28,7 +28,7 @@ const renderChart = () => {
       labels: typescales.typescales[0].map((item) => item.breakpoint),
       datasets: typescales.typescales.map((scale) => ({
         label: scale[0].step,
-        data: scale.map((item) => item.fontSize),
+        data: scale.map((item) => item.cssValue),
         borderColor: `hsl(266, 100%, 64%)`,
         borderWidth: 1,
         tension: 0,
@@ -64,7 +64,7 @@ const renderChart = () => {
         },
       },
       interaction: {
-        // mode: 'hover', TODO check which property is desired, 'hover' does not exist 
+        // mode: 'hover', TODO check which property is desired, 'hover' does not exist
         intersect: true,
       },
       plugins: {
@@ -88,7 +88,7 @@ const renderChart = () => {
               const max = scale[2];
 
               const progress = (breakpoint - min.breakpoint) / (max.breakpoint - min.breakpoint);
-              const interpolatedFontSize = min.fontSize + (max.fontSize - min.fontSize) * progress;
+              const interpolatedFontSize = min.cssValue + (max.cssValue - min.cssValue) * progress;
 
               return `${step}: ${interpolatedFontSize.toFixed(2)}px`;
             },
