@@ -1,5 +1,5 @@
 interface StepSettings {
-    breakpoint: string,
-    fontSize: number,
+    breakpoint: string | number,
+    cssValue: number,
     step: string
 }

@@ -1,4 +1,7 @@
 import { defineStore } from 'pinia'
+import {calculateMaxFontSize} from '../lib/calculateMaxFontSize'
+import {calculateMinFontSize} from '../lib/calculateMinFontSize'
+import {calculateFluidFontSize} from '../lib/calculateFluidFontSize'
 
 export const useTypescalesStore = defineStore('typescales', {
   state: () => ({
@@ -14,7 +17,8 @@ export const useTypescalesStore = defineStore('typescales', {
     stepsUp: 10,
     stepWidth: 1 as 1 | 2,
     rem: 16,
-    offsetGraph: 160
+    offsetGraph: 160,
+    screenWidth: Math.min(1920, Math.max(360, window.innerWidth)) / 2
   }),
   getters: {
     typescales: (state) => {
@@ -23,16 +27,15 @@ export const useTypescalesStore = defineStore('typescales', {
       for (let i = -state.stepsDown; i <= state.stepsUp; i++) {
         const scale: StepSettings[] = [];
         const step = "f" + i;
-        const minFontSize = Math.round(state.stepWidth * (state.minF0 * Math.pow(state.minR, i / state.minN))) / state.stepWidth;
-        const maxFontSize = Math.round(state.stepWidth * (state.maxF0 * Math.pow(state.maxR, i / state.maxN))) / state.stepWidth;
-        const fontV = (100 * (maxFontSize-minFontSize) / (state.maxBreakpoint-state.minBreakpoint)).toFixed(2);
-        const fontR = ((( state.minBreakpoint * maxFontSize - state.maxBreakpoint * minFontSize) / (state.minBreakpoint-state.maxBreakpoint))/state.rem).toFixed(2);
-        const fluidFontSize = fontV + 'vw' + ' + ' + fontR;
-        scale.push({ breakpoint: state.minBreakpoint - state.offsetGraph, fontSize: minFontSize, step });
-        scale.push({ breakpoint: state.minBreakpoint, fontSize: minFontSize, step });
-        scale.push({ breakpoint: 'fluid', fontSize: fluidFontSize, step });
-        scale.push({ breakpoint: state.maxBreakpoint, fontSize: maxFontSize, step });
-        scale.push({ breakpoint: state.maxBreakpoint + state.offsetGraph, fontSize: maxFontSize, step });
+        const minFontSize = calculateMinFontSize(i);
+        const maxFontSize = calculateMaxFontSize(i);
+        const fluidFontSize = calculateFluidFontSize(minFontSize, maxFontSize, state.screenWidth)
+
+        scale.push({ breakpoint: state.minBreakpoint - state.offsetGraph, cssValue: minFontSize, step });
+        scale.push({ breakpoint: state.minBreakpoint, cssValue: minFontSize, step });
+        scale.push({ breakpoint: 'fluid', cssValue: fluidFontSize, step });
+        scale.push({ breakpoint: state.maxBreakpoint, cssValue: maxFontSize, step });
+        scale.push({ breakpoint: state.maxBreakpoint + state.offsetGraph, cssValue: maxFontSize, step });
         typescales.push(scale);
       }
       return typescales;
