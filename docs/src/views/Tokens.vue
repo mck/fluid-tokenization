@@ -1,5 +1,5 @@
 <script setup>
-  import { computed } from 'vue'
+import {computed, onMounted} from 'vue'
   import { useTypescalesStore } from '../stores/typescales'
   import { PrismEditor } from 'vue-prism-editor'
   import 'vue-prism-editor/dist/prismeditor.min.css'
@@ -9,11 +9,30 @@
   import 'prismjs/themes/prism-tomorrow.css'
 
   const typescales = useTypescalesStore()
-  const code = computed(() => JSON.stringify(typescales.designTokens['font-scale'], null, 2))
+  const code = computed(() => JSON.stringify(typescales.designTokens, null, 2))
 
   function highlighter (code) {
     return highlight(code, languages.js) // languages.<insert language> to return html with markup
   }
+
+  onMounted(() => {
+    if (typeof Prism === 'undefined' || typeof document === 'undefined' || !document.querySelector) {
+      return;
+    }
+
+    Prism.plugins.toolbar.registerButton('download-file', function (env) {
+      var pre = env.element.parentNode;
+      if (!pre || !/pre/i.test(pre.nodeName) || !pre.hasAttribute('data-src') || !pre.hasAttribute('data-download-link')) {
+        return;
+      }
+      var src = pre.getAttribute('data-src');
+      var a = document.createElement('a');
+      a.textContent = pre.getAttribute('data-download-link-label') || 'Download';
+      a.setAttribute('download', '');
+      a.href = src;
+      return a;
+    });
+  })
 </script>
 
 <template>
