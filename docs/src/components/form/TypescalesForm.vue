@@ -80,8 +80,8 @@ const typescales = useTypescalesStore();
     <div class="grid mb-5">
       <div class="field col-12 md:col-3">
         <span class="p-float-label">
-          <InputText id="rem" v-model.number="typescales.rem" class="w-full"/>
-          <Slider v-model="typescales.rem" :step="1" :min="8" :max="64"/>
+          <InputText id="rem" v-model.number="typescales.rem" class="w-full" disabled/>
+          <Slider v-model="typescales.rem" :step="1" :min="8" :max="64" disabled/>
           <label for="rem">Rem</label>
         </span>
       </div>
