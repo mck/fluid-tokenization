@@ -14,9 +14,9 @@ const typescales = computed(() => {
     const {fontR, fontV} = calculateFluidFontSize(scale[1].cssValue, scale[3].cssValue, 1)
     return {
       step: scale[0].step,
-      min: minRem,
+      min: scale[1].cssValue.toFixed(2) + 'px / ' + minRem,
       fluid: `clamp(${minRem}, calc(${fontV.toFixed(2)}vw + ${(fontR / typescaleStore.rem).toFixed(2)}rem), ${maxRem})`,
-      max: maxRem,
+      max: scale[3].cssValue.toFixed(2) + 'px / ' + maxRem,
     }
   })
 })
@@ -25,8 +25,8 @@ const typescales = computed(() => {
 <template>
   <DataTable :value="typescales">
     <Column field="step" header="Step" />
-    <Column field="min" :header="typescaleStore.minBreakpoint" />
+    <Column field="min" :header="typescaleStore.minBreakpoint + 'px'" />
     <Column field="fluid" header="fluid" />
-    <Column field="max" :header="typescaleStore.maxBreakpoint" />
+    <Column field="max" :header="typescaleStore.maxBreakpoint + 'px'" />
   </DataTable>
 </template>
