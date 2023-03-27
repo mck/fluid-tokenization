@@ -76,6 +76,7 @@ const renderChart = () => {
           hitRadius: 5
         }
       },
+      animation: false,
       plugins: {
         tooltip: {
           enabled: true,
