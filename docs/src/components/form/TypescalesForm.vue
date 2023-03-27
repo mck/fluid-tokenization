@@ -19,7 +19,7 @@ const typescales = useTypescalesStore();
     <div class="grid mb-5">
       <div class="field col-12 md:col-3">
       <span class="p-float-label">
-          <InputText id="minBreakpoint" v-model="typescales.minBreakpoint" class="w-full"/>
+          <InputText id="minBreakpoint" v-model.number="typescales.minBreakpoint" class="w-full"/>
           <label for="minBreakpoint">Min Breakpoint</label>
       </span>
       </div>
@@ -49,7 +49,7 @@ const typescales = useTypescalesStore();
     <div class="grid mb-5">
       <div class="field col-12 md:col-3">
         <span class="p-float-label">
-            <InputText id="maxBreakpoint" v-model="typescales.maxBreakpoint" class="w-full"/>
+            <InputText id="maxBreakpoint" v-model.number="typescales.maxBreakpoint" class="w-full"/>
             <label for="maxBreakpoint">Max Breakpoint</label>
         </span>
       </div>
@@ -111,7 +111,7 @@ const typescales = useTypescalesStore();
       <div class="field col-12 md:col-3">
         <span class="p-float-label">
           <InputText id="screenWidth" v-model.number="typescales.screenWidth" class="w-full"/>
-          <Slider v-model="typescales.screenWidth" :step="1" :min="360" :max="1920"/>
+          <Slider v-model="typescales.screenWidth" :step="1" :min="typescales.minBreakpoint" :max="typescales.maxBreakpoint"/>
           <label for="screenWidth">Screen Width</label>
         </span>
       </div>

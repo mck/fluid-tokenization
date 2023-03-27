@@ -29,7 +29,7 @@ export const useTypescalesStore = defineStore('typescales', {
         const step = "f" + i;
         const minFontSize = calculateMinFontSize(i);
         const maxFontSize = calculateMaxFontSize(i);
-        const fluidFontSize = calculateFluidFontSize(minFontSize, maxFontSize, state.screenWidth)
+        const { clamped: fluidFontSize } = calculateFluidFontSize(minFontSize, maxFontSize, state.screenWidth)
 
         scale.push({ breakpoint: state.minBreakpoint - state.offsetGraph, cssValue: minFontSize, step });
         scale.push({ breakpoint: state.minBreakpoint, cssValue: minFontSize, step });

@@ -20,9 +20,6 @@ onBeforeUnmount(() => {
 })
 
 const renderChart = () => {
-  console.log(typescales.typescales[0].map((item) => item.breakpoint))
-  console.log(typescales.typescales.map(scale => scale.map(item => item.cssValue)))
-
   if (!canvas.value) return;
   chartInstance?.destroy();
   chartInstance = new Chart(canvas.value, {
