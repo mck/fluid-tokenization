@@ -1,8 +1,11 @@
-import { defineStore } from 'pinia'
-import {calculateMaxFontSize} from '../lib/calculateMaxFontSize'
-import {calculateMinFontSize} from '../lib/calculateMinFontSize'
-import {calculateFluidFontSize} from '../lib/calculateFluidFontSize'
+import {defineStore} from 'pinia'
 import {generateTypescaleSteps} from '../lib/generateTypescaleSteps'
+
+export interface StepSettings {
+  breakpoint: string | number,
+  cssValue: number,
+  step: string
+}
 
 export const useTypescalesStore = defineStore('typescales', {
   state: () => ({

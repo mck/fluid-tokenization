@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import {computed} from 'vue'
   import {generateTypescaleSteps} from '../../lib/generateTypescaleSteps'
-  import {useTypescalesStore} from '../../stores/typescales'
+  import {StepSettings, useTypescalesStore} from '../../stores/typescales'
 
   const typescaleStore = useTypescalesStore()
   const exampleTypescales = computed<StepSettings[][]>(() => generateTypescaleSteps(2, 6))
