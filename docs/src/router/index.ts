@@ -11,27 +11,27 @@ const router = createRouter({
         {
             path: "/",
             name: "home",
-            component: () => Home
+            component: Home
         },
         {
             path: "/graph",
             name: "graph",
-            component: () => Graph
+            component: Graph
         },
         {
             path: "/table",
             name: "table",
-            component: () => Table
+            component: Table
         },
         {
             path: "/sample",
             name: "sample",
-            component: () => Sample
+            component: Sample
         },
         {
             path: "/tokens",
             name: "tokens",
-            component: () => Tokens
+            component: Tokens
         }
     ]
 })
