@@ -1,7 +1,7 @@
 import {calculateMinFontSize} from './calculateMinFontSize'
 import {calculateMaxFontSize} from './calculateMaxFontSize'
 import {calculateFluidFontSize} from './calculateFluidFontSize'
-import {useTypescalesStore} from '../stores/typescales'
+import {StepSettings, useTypescalesStore} from '../stores/typescales'
 
 export function generateTypescaleSteps(stepsDown: number, stepsUp: number): StepSettings[][] {
   const typescaleStore = useTypescalesStore()

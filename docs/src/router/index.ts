@@ -1,8 +1,7 @@
-import {createRouter, createWebHistory} from "vue-router"
-import Home from "../views/Home.vue"
-import Graph from "../views/Graph.vue"
-import Table from "../views/Table.vue"
-import Scale from '../views/Scale.vue'
+import {createRouter, createWebHistory} from 'vue-router'
+import Home from '../views/Home.vue'
+import Graph from '../views/Graph.vue'
+import Table from '../views/Table.vue'
 import Sample from '../views/Sample.vue'
 import Tokens from '../views/Tokens.vue'
 

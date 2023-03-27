@@ -1,5 +1,8 @@
-interface StepSettings {
-    breakpoint: string | number,
-    cssValue: number,
-    step: string
+import "primevue/inputtext/InputText.d.ts"
+declare module "primevue/inputtext/InputText.d.ts" {
+    import {Nullable} from 'primevue/ts-helpers'
+
+    export interface InputTextProps {
+        modelValue?: Nullable<string | number>
+    }
 }
