@@ -2,7 +2,7 @@ import {defineStore} from 'pinia'
 import {generateTypescaleSteps} from '../lib/generateTypescaleSteps'
 
 export interface StepSettings {
-  breakpoint: string | number,
+  breakpoint: number,
   cssValue: number,
   step: string
 }
