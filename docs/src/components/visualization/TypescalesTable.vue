@@ -15,7 +15,7 @@ const typescales = computed(() => {
     return {
       step: scale[0].step,
       min: scale[1].cssValue.toFixed(2) + 'px / ' + minRem,
-      fluid: `clamp(${minRem}, calc(${fontV.toFixed(2)}vw + ${(fontR / typescaleStore.rem).toFixed(2)}rem), ${maxRem})`,
+      fluid: `${scale[2].cssValue.toFixed(2)}px / clamp(${minRem}, calc(${fontV.toFixed(2)}vw + ${(fontR / typescaleStore.rem).toFixed(2)}rem), ${maxRem})`,
       max: scale[3].cssValue.toFixed(2) + 'px / ' + maxRem,
     }
   })
@@ -26,7 +26,7 @@ const typescales = computed(() => {
   <DataTable :value="typescales">
     <Column field="step" header="Step" />
     <Column field="min" :header="typescaleStore.minBreakpoint + 'px'" />
-    <Column field="fluid" header="fluid" />
+    <Column field="fluid" :header="typescaleStore.screenWidth + 'px (fluid)'" />
     <Column field="max" :header="typescaleStore.maxBreakpoint + 'px'" />
   </DataTable>
 </template>
