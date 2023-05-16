@@ -32,7 +32,7 @@ const typescales = useTypescalesStore();
       <div class="field col-12 md:col-3">
       <span class="p-float-label">
         <InputNumber id="minR" v-model.number="typescales.minR" class="w-full" :format="false" :minFractionDigits="1" :maxFractionDigits="5"/>
-        <Slider v-model="typescales.minR" :step="0.01" :min="1" :max="5"/>
+        <Slider v-model="typescales.minR" :step="0.001" :min="1" :max="5"/>
         <label for="minR">Min r</label>
       </span>
       </div>
@@ -62,7 +62,7 @@ const typescales = useTypescalesStore();
       <div class="field col-12 md:col-3">
         <span class="p-float-label">
           <InputNumber id="maxR" v-model.number="typescales.maxR" class="w-full" :format="false" :minFractionDigits="1" :maxFractionDigits="5" />
-          <Slider v-model="typescales.maxR" :step="0.01" :min="1" :max="5"/>
+          <Slider v-model="typescales.maxR" :step="0.001" :min="1" :max="5"/>
           <label for="maxR">max r</label>
         </span>
       </div>
